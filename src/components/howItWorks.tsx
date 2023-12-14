@@ -60,8 +60,8 @@ const HowItWorks = () => {
                   <div className="text-center">
                      <p className="text-md font-semibold">Start your Search</p>
                      <p>
-                        That's it! Following your approval you will have access to various Pools of
-                        noteworthy candidates.
+                        That's it! Following your approval you will have access to various Build
+                        Caps of noteworthy candidates.
                      </p>
                   </div>
                </div>

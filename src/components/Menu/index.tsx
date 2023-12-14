@@ -14,13 +14,13 @@ const Menu = () => {
    const ServicesData = [
       { title: "Home", link: "/" },
       { title: "Hire", link: "/hire" },
-      { title: "Join The Pool", link: "/join" },
+      { title: "Join The Build Cap", link: "/join" },
    ];
    const CompanyData = [
       // { title: "About Us", link: "/about-us" },
       { title: "Contact Us", link: "/contact-us" },
-      { title: "Terms of Service", link: "/Terms-of-use-The-pool.pdf" },
-      { title: "Privacy Policy", link: "/Privacy-Policy-pool.pdf" },
+      { title: "Terms of Service", link: "/Terms-of-use-The-Build Cap.pdf" },
+      { title: "Privacy Policy", link: "/Privacy-Policy-Build Cap.pdf" },
    ];
 
    return (
