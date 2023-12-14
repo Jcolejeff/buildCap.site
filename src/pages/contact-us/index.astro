@@ -1,0 +1,77 @@
+---
+import Layout from "layouts/Layout.astro";
+import TextFormat from "lib/helpers/TextFormat";
+import Fade from "react-reveal/Fade";
+import { url } from "lib/utils";
+
+import HowCanWeHelpSection from "components/ContactSales";
+const sections = [
+   {
+      heading: "Technical Support",
+      paragraph: "Our team is ready to help if you're having trouble with our product.",
+      img: "/images/contact/support.svg",
+   },
+   {
+      heading: "Suggest a Feature",
+      paragraph:
+         "Helps us shape the future of our assistant by sharing your thoughts on potential features",
+      img: "/images/contact/support2.svg",
+   },
+   {
+      heading: "Integration partner network",
+      paragraph: "Are you having a problem integrating partner network? reach out to our experts",
+      img: "/images/contact/support3.svg",
+   },
+];
+---
+
+<Layout title="Contact Us">
+   <main class="w-full flex flex-col bg-primary-2">
+      <section class="mt-20 w-full bg-primary-1 text-white overflow-hidden">
+         <section
+            class="w-full py-[3rem] pb-20 md:pt-[6rem] md:pb-[7.25rem] md:py-[5rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
+         >
+            <div class="w-full flex flex-col justify-center gap-[2.5rem] md:gap-[2.75rem] relative">
+               <div class="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
+                  <div class="flex items-center gap-4 bg-secondary-1/25 py-3 px-6 rounded-full">
+                     <p class="font-[600] text-sm md:text-lg">CONTACT US</p>
+                  </div>
+                  <h1
+                     class="font-[700] text-center text-[2.3rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[60rem] lg:ml-[-0.2rem]"
+                  >
+                     <TextFormat
+                        text={`Hi    our amiable team are ready to help `}
+                        keyword={"business"}
+                        keywordClassName="text-secondary  transition-all duration-500 ease-in-out"
+                     />
+                  </h1>
+               </div>
+            </div>
+         </section>
+      </section>
+      <section
+         class="grid mt-12 md:grid-cols-[1fr_1fr_1fr] gap-[3rem] rounded-lg w-full py-[3rem] pb-20 md:pt-[6rem] md:pb-[7.25rem] md:py-[5rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
+      >
+         {
+            sections.map((item) => {
+               return (
+                  <article class=" bg-slate-200/50 px-5 py-8 md:py-20  flex gap-4 items-center border-[3px] rounded-lg">
+                     <img src={url(item.img)} alt="" />
+                     <div class="flex flex-col gap-4  px-2">
+                        <h3 class="font-semibold text-2xl">{item.heading}</h3>
+                        <p class="text-[1.1rem] leading-[130%] md:leading-[2rem] tracking-[0.02rem] md:tracking-[0.0225rem]">
+                           {item.paragraph}
+                        </p>
+                     </div>
+                  </article>
+               );
+            })
+         }
+      </section>
+      <section class="">
+         <section class="py-16 md:pb-[8rem] md:pt-[5rem]">
+            <HowCanWeHelpSection client:load />
+         </section>
+      </section>
+   </main>
+</Layout>

@@ -1,0 +1,145 @@
+---
+import Nav from "components/Nav/index.astro";
+
+import "@fontsource/lato";
+import "@fontsource-variable/plus-jakarta-sans";
+import heroBgImg from "../assets/heroBgImage.svg";
+import heroBgImgMobile from "../assets/heroBgImageMobile.svg";
+import Footer from "components/Footer";
+import Faq from "components/Faq";
+import "react-toastify/dist/ReactToastify.css";
+
+import { ToastContainer } from "react-toastify";
+
+export interface Props {
+   title?: string;
+
+   darkNavBg?: boolean;
+   withoutBottomNav?: boolean;
+   withoutFAQ?: boolean;
+   withoutWhatBusinessSay?: boolean;
+}
+
+export const prerender = true;
+
+let { title, darkNavBg, withoutBottomNav, withoutFAQ, withoutWhatBusinessSay } = Astro.props;
+const PAGE_TITLE = title != null && title?.length > 0 ? title : "The Pool - The New Way to Hire";
+---
+
+<!DOCTYPE html>
+<html lang="en" class="">
+   <head itemscope itemtype="http://schema.org/WebSite">
+      <meta name="title" content="Build Cap" />
+
+      <meta
+         name="description"
+         content="You should be able to hire whenever you need to. No roadblocks. No time constraints. 24/7 access to Pools of candidates."
+      />
+      <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <link
+         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,500;1,9..40,700;1,9..40,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+         rel="stylesheet"
+      />
+
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <meta
+         name="keywords"
+         content="jobs, hire, employment, job search, job site, job vacancies, job openings, job listings, job opportunities, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment"
+      />
+      <meta itemprop="name" content="The Pool" />
+      <meta itemprop="url" content="https://the-pool.com/" />
+      <meta property="og:title" content="The Pool - The New Way to Hire" />
+      <meta
+         property="og:description"
+         content="You should be able to hire whenever you need to. No roadblocks. No time constraints. 24/7 access to Pools of candidates."
+      />
+      <meta property="og:url" content="the-pool.com" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="The Pool" />
+      <meta property="og:image" content="/images/og-img.png" />
+
+      <title>
+         {PAGE_TITLE || "Build Cap"}
+      </title>
+      <script type="application/ld+json">
+         {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://the-pool.com/",
+            "logo": "/images/logo.svg",
+            "contactPoint": [
+               {
+                  "@type": "ContactPoint",
+                  "email": "support@jointhepool.com",
+                  "contactType": "support",
+                  "availableLanguage": ["English"],
+                  "description": "Customer support"
+               }
+            ]
+         }
+      </script>
+   </head>
+   <body class="font-quicksand overflow-hidden w-screen h-[100vh]">
+      <div class="w-full h-full overflow-x-hidden relative scroll-smooth">
+         {
+            (
+               <section class={`shadow-sm fixed w-full z-50 top-0 left-0 bg-primary-2`}>
+                  <Nav darkNavBg={!darkNavBg} />
+               </section>
+            )
+         }
+
+         <slot />
+         <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+            client:only
+         />
+         <section class="w-full bg-primary-1 pb-[1.5rem]">
+            <Faq client:load />
+         </section>
+         <section class="w-full bg-primary-2 pb-[1.5rem]">
+            <Footer client:load />
+         </section>
+      </div>
+   </body>
+</html>
+<style is:global>
+   :root {
+   }
+   * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }
+
+   html {
+      font-size: 14px;
+      color:;
+   }
+   /* styles.css */
+   .custom-dot-list-style li button {
+      @apply bg-none; /* Replace with your Tailwind color class */
+   }
+   .justify-startt {
+      align-self: flex-start;
+   }
+</style>

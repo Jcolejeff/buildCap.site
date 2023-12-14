@@ -1,0 +1,131 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Faq from "components/Faq";
+import TextFormat from "lib/helpers/TextFormat";
+import blueCheck from "assets/blueCheck.svg";
+import Fade from "react-reveal/Fade";
+import LogoMarquee from "components/LogosSlide";
+import PriceList from "components/PricingList/PriceList";
+
+const images = [
+   "/images/pricing/buffer.svg",
+   "/images/pricing/stripe.svg",
+   "/images/pricing/netflix.svg",
+   "/images/pricing/dropbox.svg",
+   "/images/pricing/hub.svg",
+   "/images/pricing/framer.svg",
+];
+---
+
+<Layout title="Build Cap: Plans and Pricing">
+   <section class="mt-20 w-full bg-primary-1 text-white overflow-hidden">
+      <section
+         class="w-full py-[3rem] pb-20 md:pt-[6rem] md:pb-[7.25rem] md:py-[5rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
+      >
+         <div class="w-full flex flex-col justify-center gap-[2.5rem] md:gap-[2.75rem] relative">
+            <div class="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
+               <div class="flex items-center gap-4 bg-secondary-1/25 py-3 px-6 rounded-full">
+                  <p class="font-[600] text-sm md:text-lg">PRICING PLAN</p>
+               </div>
+               <h1
+                  class="font-[700] text-center text-[2.3rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[60rem] lg:ml-[-0.2rem]"
+               >
+                  <TextFormat
+                     text={`Pick the best plan for your business`}
+                     keyword={"business"}
+                     keywordClassName="text-secondary  transition-all duration-500 ease-in-out"
+                  />
+               </h1>
+               <Fade bottom client:load>
+                  <h2
+                     class="font-[500] text-gray-400 mt-4 md:mt-10 text-center text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem] xxl:max-w-[45.875rem]"
+                  >
+                     These businesses already use Assistant
+                  </h2>
+               </Fade>
+
+               <div
+                  class="flex mx-auto max-w-6xl items-center gap-4 transition-all duration-500 ease-in-out mb-5"
+               >
+                  <LogoMarquee images={images} client:only />
+               </div>
+            </div>
+         </div>
+      </section>
+   </section>
+   <section class="bg-primary-2 py-10">
+      <!-- price list -->
+      <PriceList client:load />
+   </section>
+   <section class="w-full bg-primary-2">
+      <section
+         class="w-full py-[3rem] md:py-[8rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
+      >
+         <div class="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
+            <div class="flex items-center py-3 px-6 rounded-full">
+               <img src="images/pricing/hunt.svg" alt="" class="w-40 md:w-full" />
+            </div>
+            <h1
+               class="font-[700] text-secondary-2 text-center text-[1.6rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]"
+            >
+               <TextFormat
+                  text={`“The Very best tool for non-technical person to build almost everything.”`}
+                  keyword={"The Pool"}
+                  keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
+               />
+            </h1>
+
+            <div
+               class="flex items-center flex-col md:flex-row gap-4 transition-all duration-500 ease-in-out mb-5"
+            >
+               <Fade bottom client:load>
+                  <p class="text-sm md:text-xl text-gray-500">
+                     Assistant is rated 4.9/5 stars on product hunt reviews.
+                  </p>
+               </Fade>
+               <div class="flex items-center gap-4 bg-secondary-1/25 py-3 px-6 rounded-full">
+                  <p class="font-[600] text-sm md:text-xl">See what they are saying</p>
+                  <img src="images/landing-page/arrow.svg" alt="" />
+               </div>
+            </div>
+         </div>
+      </section>
+   </section>
+
+   <section class="w-full bg-primary-2 py-[2.5rem]">
+      <Faq client:only />
+   </section>
+   <section class="w-full bg-primary-1 scroll-mt-28" id="download">
+      <section
+         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px]"
+      >
+         <div class="w-full flex flex-col items-center gap-10">
+            <div class="">
+               <h2
+                  class="font-[600] text-white text-center text-[2rem] md:text-[4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[90rem]"
+               >
+                  <TextFormat
+                     text={`Start your Assistant journey and amplify your business`}
+                     keyword={"business"}
+                     keywordClassName="text-secondary-1 transition-all duration-500 ease-in-out"
+                  />
+               </h2>
+            </div>
+
+            <div
+               class="flex items-center md:justify-center md:w-1/2 gap-4 transition-all duration-500 ease-in-out"
+            >
+               <a href="/" class="">
+                  <div
+                     class="flex items-center justify-center bg-white py-3 md:py-4 px-4 md:px-6 rounded-lg"
+                  >
+                     <p class="text-primary-1 text-sm md:text-base font-bold tracking-wider">
+                        Get started with Assistant
+                     </p>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </section>
+   </section>
+</Layout>

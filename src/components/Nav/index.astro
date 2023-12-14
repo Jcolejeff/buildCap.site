@@ -1,0 +1,53 @@
+---
+import { Icon } from "astro-icon";
+import NavDrop from "components/NavDrop";
+import DpPlaceholder from "assets/dpPlaceholder.svg";
+import Menu from "components/Menu";
+import { url } from "lib/utils";
+
+export interface Props {
+   darkNavBg?: boolean;
+}
+
+export const prerender = true;
+
+let { darkNavBg } = Astro.props;
+---
+
+<nav
+   class="container max-w-[1700px] px-container-base lg:px-container-lg xl:px-container-xl bg-transparent"
+>
+   <div
+      class="w-full flex items-center justify-between lg:border-b-secondary-1 py-[1.2rem] md:pb-[1rem] md:pt-[1.5rem] xxl:py-8"
+   >
+      <div class="flex items-center gap-[2.5rem] w-full">
+         <a href="/" class="flex items-center gap-4">
+            <img src={url("/images/logo.png")} alt="" class="w-8 md:w-12" />
+            <p class="font-bold text-sm md:text-2xl">Build Cap</p>
+         </a>
+         <div class="hidden lg:flex items-center gap-[0.5rem]">
+            <NavDrop darkNavBg={darkNavBg} client:load />
+         </div>
+      </div>
+
+      <div
+         class="flex invisible md:visible items-center justify-end md:w-1/2 gap-4 transition-all duration-500 ease-in-out md:mb-0 ml-[-6px]"
+      >
+         <a href="https://app.assistant.timbu.cloud/login" class="">
+            <div class="flex items-center justify-center md:py-2 md:px-4 md:pr-6 rounded-lg">
+               <p class="text-[1.1rem] font-light tracking-wider">Sign In</p>
+            </div>
+         </a>
+         <a href="https://app.assistant.timbu.cloud/create-account" class="">
+            <div class="flex items-center justify-center bg-black md:py-4 md:px-4 rounded-lg">
+               <p class="text-white text-sm md:text-[1.1rem] font-bold tracking-wider">
+                  Try Assistant
+               </p>
+            </div>
+         </a>
+      </div>
+      <div class="flex md:hidden">
+         <Menu client:only />
+      </div>
+   </div>
+</nav>

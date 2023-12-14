@@ -1,0 +1,63 @@
+---
+import Fade from "react-reveal/Fade";
+import TextFormat from "lib/helpers/TextFormat";
+import { url } from "lib/utils";
+import { cn } from "lib/utils";
+
+export interface Props {
+   text: string;
+   title: string;
+   img: string;
+   direction: string;
+   blueWord: string;
+   idx: number;
+}
+
+const { text, title, img, direction, blueWord, idx } = Astro.props;
+---
+
+<section class="flex flex-col bg-white px-10 gap-20 md:gap-[10rem]">
+   <section class="w-full">
+      <div
+         class={`w-full flex  gap-8 flex-col justify-between  ${
+            idx % 2 === 0 ? `md:flex-row` : `md:flex-row-reverse`
+         } md:gap-[5rem] `}
+      >
+         <div class="flex-grow gap-6 flex justify-center 2xl:gap-8 flex-col md:w-[50%]">
+            <h1
+               class="font-[600] text-secondary-2 text-left text-[2rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[40rem] lg:ml-[-0.2rem]"
+            >
+               <TextFormat
+                  text={`${title}`}
+                  keyword={blueWord}
+                  keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
+               />
+            </h1>
+            <Fade bottom client:load>
+               <h2
+                  class="font-[500] text-left text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[1.8rem] max-w-[38.875rem] xxl:max-w-[45.875rem]"
+               >
+                  {text}
+               </h2>
+            </Fade>
+
+            <!-- <div class="flex gap-4 mb-5 md:mb-0 md:ml-[-6px]">
+               <a href="/hire" class="rounded-lg">
+                  <p class="text-white bg-black p-4 rounded-lg text-base font-light tracking-wider">
+                     Start Now <span class="ml-2">→</span>
+                  </p>
+               </a>
+            </div> -->
+         </div>
+         <div
+            class="flex justify-start md:justify-end items-center w-full md:w-[50%] rounded-[0.75rem] py-12 md:p-12 xxl:p-16"
+         >
+            <img
+               src={url(img)}
+               alt={`/images/landing-page/landing2.webp`}
+               class="w-full h-full max-h-[500px] object-cover"
+            />
+         </div>
+      </div>
+   </section>
+</section>
