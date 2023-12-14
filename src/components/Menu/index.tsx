@@ -87,7 +87,7 @@ const Menu = () => {
                </div>
 
                <div className="flex items-center justify-center  mt-14   gap-4 transition-all duration-500 ease-in-out mb-5 md:mb-0 md:ml-[-6px]">
-                  <a href="https://app.assistant.timbu.cloud/create-account" className="">
+                  <a href="#" className="">
                      <div className="flex items-center  gap-2 justify-center bg-primary-1 py-2 px-4 pr-6 rounded-lg">
                         <div>
                            <a className="text-white text-base font-semibold tracking-wider block px-6 py-2">
@@ -96,7 +96,7 @@ const Menu = () => {
                         </div>
                      </div>
                   </a>
-                  <a href="https://app.assistant.timbu.cloud/login" className="">
+                  <a href="#" className="">
                      <div className="flex items-center gap-2 justify-center bg-primary-1  py-2 px-4 pr-6 rounded-lg">
                         <div>
                            <a className="text-white text-base font-semibold tracking-wider block px-6 py-2">

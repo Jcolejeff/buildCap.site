@@ -5,19 +5,19 @@ const Features = () => {
       {
          heading: "Scalability",
          paragraph:
-            "Our advanced assistant allows your business to effortlessly expand its capabilities as your need to grow ensuring flexibility and adaptability for the future.",
+            "Our advanced Build Cap allows your business to effortlessly expand its capabilities as your need to grow ensuring flexibility and adaptability for the future.",
          img: " /images/landing-page/scale.svg",
       },
       {
          heading: "Facile Integration",
          paragraph:
-            "Incorporating our assistant into your app’s navigation not only enriches the user experience but also opens doors to increased efficiency, engagement, and user satisfaction. ultimately benefiting your business.",
+            "Incorporating our Build Cap into your app’s navigation not only enriches the user experience but also opens doors to increased efficiency, engagement, and user satisfaction. ultimately benefiting your business.",
          img: " /images/landing-page/scale.svg",
       },
       {
          heading: "Customizable Workflow",
          paragraph:
-            "Our assistant offers the flexibility of customizable workflows, empowering your business to tailor its functionalities to suit your unique processes and preference.",
+            "Our Build Cap offers the flexibility of customizable workflows, empowering your business to tailor its functionalities to suit your unique processes and preference.",
          img: " /images/landing-page/scale.svg",
       },
    ];

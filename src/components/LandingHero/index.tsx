@@ -19,23 +19,23 @@ const LandingPageHero = () => {
                </div>
                <h1 className="font-[700] text-secondary-2 text-center    text-[2.3rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]">
                   <TextFormat
-                     text={`Catalyze your business success with our exclusive solution`}
+                     text={`Financial solutions built for subcontractors`}
                      keyword={"The Pool"}
                      keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                   />
                </h1>
                <Fade bottom>
                   <h2 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
-                     Experience unparalleled efficiency, data driven insights and seamless
-                     automation tailored to your business needs.
+                     Empowering you to do the best work of your life with efficiency, speed and
+                     accuracy.
                   </h2>
                </Fade>
 
                <div className="flex items-center   gap-4 transition-all duration-500 ease-in-out mb-5">
-                  <a href="https://app.assistant.timbu.cloud/create-account" className="">
+                  <a href="h" className="">
                      <div className="flex items-center justify-center bg-black px-4 py-3 md:py-4 md:px-4 rounded-lg">
                         <p className="text-white  text-sm md:text-[1.1rem] font-bold tracking-wider">
-                           Try Assistant
+                           Get Started
                         </p>
                      </div>
                   </a>

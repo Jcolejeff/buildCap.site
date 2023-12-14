@@ -69,7 +69,7 @@ export const FooterLinksData = [
          category: "solutions",
          links: [
             {
-               title: "Assistant",
+               title: "Build Cap",
                url: "https://www.facebook.com",
             },
          ],

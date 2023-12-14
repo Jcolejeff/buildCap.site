@@ -40,7 +40,7 @@ const Footer = ({}: IFooter) => {
          </div>
          <div className=" py-6 pt-9 gap-8 md:gap-0 flex flex-col-reverse md:flex-row justify-between">
             <p className="  font-semibold leading-[2rem] tracking-[0.00625rem]">
-               Copyright © {new Date().getFullYear()} AI Assistant All Rights Reserved
+               Copyright © {new Date().getFullYear()} AI Build Cap All Rights Reserved
             </p>
             <div className="flex w-1/2   gap-8">
                <img src={url("/images/footer/fb.svg")} alt="" />

@@ -1,7 +1,7 @@
-# Timbu landing
+# Build Cap landing
 
 ```
-landing page for the timbu platform
+landing page for the Build Cap platform
 ```
 
 ## 🚀 Project Structure

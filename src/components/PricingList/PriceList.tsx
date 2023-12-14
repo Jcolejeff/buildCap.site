@@ -27,14 +27,14 @@ const PriceList = () => {
          title: "Business",
          price: prices[index].prices[0],
          for: "Ideal for growing businesses that need more customers",
-         features: ["Customizable assistant", "Basic Support", "One Integration", "Email support"],
+         features: ["Customizable Build Cap", "Basic Support", "One Integration", "Email support"],
       },
       {
          title: "Business Pro",
          price: prices[index].prices[1],
          for: "For large organization with specific needs",
          features: [
-            "Customizable assistant",
+            "Customizable Build Cap",
             "Priority support",
             "Three Integration",
             "Email support",
@@ -45,7 +45,7 @@ const PriceList = () => {
          price: prices[index].prices[2],
          for: "For large organization with specific needs",
          features: [
-            "Customizable assistant",
+            "Customizable Build Cap",
             "Priority support",
             "One Integration",
             "Email support",
