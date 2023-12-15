@@ -8,7 +8,7 @@ export const FooterLinksData = [
          category: "Company",
          links: [
             // {
-            //    title: "The Build Cap and Team",
+            //    title: "The BuildCAP and Team",
             //    url: "/about-us",
             // },
             {
@@ -69,7 +69,7 @@ export const FooterLinksData = [
          category: "solutions",
          links: [
             {
-               title: "Build Cap",
+               title: "BuildCAP",
                url: "https://www.facebook.com",
             },
          ],
@@ -94,7 +94,7 @@ export const FooterLinksData = [
             //    url: "#faq",
             // },
             {
-               title: "Support@Build Cap.com",
+               title: "Support@BuildCAP.com",
                url: "mailto:support@joi.com",
             },
          ],

@@ -30,7 +30,7 @@ const Faq = () => {
             {FAQdata?.map((i, idx) => (
                <Accordion key={idx} type="single" collapsible>
                   <AccordionItem value={i?.slug}>
-                     <AccordionTrigger className="border-b  ">
+                     <AccordionTrigger className="border-b border-gray-50/25  ">
                         <span className=" font-normal text-white  text-start text-[1.17rem] leading-[1.5rem] opacity-[0.90]  hover:underline">
                            {i?.data?.question}
                         </span>

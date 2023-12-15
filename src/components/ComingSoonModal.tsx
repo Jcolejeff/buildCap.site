@@ -53,7 +53,7 @@ const ComingSoonModal = () => {
       defaultValues: {
          user_email: "",
          message:
-            "Hi,i just signed up to join the Build Cap when you launch!, please notify me when you launch",
+            "Hi,i just signed up to join the BuildCAP when you launch!, please notify me when you launch",
       },
    });
 
@@ -215,7 +215,7 @@ const ComingSoonModal = () => {
                      </form>
                   </Form>
                   <a
-                     href="mailto:support@jointheBuild Cap.com"
+                     href="mailto:support@jointheBuildCAP.com"
                      className="font-semibold text-center md:text-lg underline text-primary-1"
                   >
                      Or Contact Us
