@@ -8,9 +8,13 @@ import TextFormat from "lib/helpers/TextFormat";
 import ComingSoonModal from "components/ComingSoonModal";
 import BusinessCard from "components/BusinessCard";
 import load from "astro-icon/lib/utils";
-import InfoAboutCompany from "components/LandingPageSections/InfoAboutCompany.astro";
+// import InfoAboutCompany from "components/LandingPageSections/InfoAboutCompany.astro";
 import Features from "components/Features";
 import LogoMarquee from "components/LogosSlide";
+import ProductInfo from "components/ProductInfo";
+import InfoAboutCompany from "components/InfoAboutCompany";
+import HowToSections from "components/HowToSections";
+import Feedbacks from "components/Feedbacks";
 
 const data = [
    {
@@ -232,6 +236,40 @@ const images = [
          </div>
       </section>
    </section>
+
+   <!-- test animaions -->
+   <section class="w-full bg-primary-1 scroll-mt-28" id="download">
+      <section
+         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] border"
+      >
+         <ProductInfo client:only />
+      </section>
+   </section>
+
+   <!-- test animaions -->
+   <section class="w-full bg-primary-1 scroll-mt-28" id="download">
+      <section
+         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] border text-white"
+      >
+         <InfoAboutCompany client:only />
+      </section>
+   </section>
+   <!-- test animaions -->
+   <section class="w-full bg-primary-1 scroll-mt-28" id="download">
+      <section
+         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] border text-white"
+      >
+         <HowToSections client:only />
+      </section>
+   </section>
+   <section class="w-full bg-primary-1 scroll-mt-28" id="download">
+      <section
+         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] border text-white"
+      >
+         <Feedbacks client:only />
+      </section>
+   </section>
+
    <section class="w-full bg-primary-1 scroll-mt-28" id="download">
       <section
          class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px]"
