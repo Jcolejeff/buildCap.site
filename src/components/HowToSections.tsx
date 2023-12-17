@@ -50,10 +50,10 @@ const HowToSections = () => {
       <>
          <motion.div variants={textVariant(0.1)}>
             <h3 className={`${styles.sectionHeadText}`}>
-               <span className="section__gradient">Places I've Worked So far</span> 💻
+               <span className="section__gradient">"Empower Your Subcontractors</span> 🤝
             </h3>
             <p className="text-secondary font-[16px] mt-4 leading-[30px]">
-               Each engagement has played a great impact in my competency.
+               Let's find out how BuildCAP can help you achieve your goals.
             </p>
          </motion.div>
 

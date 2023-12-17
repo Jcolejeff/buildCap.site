@@ -122,7 +122,7 @@ const testimonials = [
 
 const projects = [
    {
-      name: "SatsSwap",
+      name: "Material financing",
       description:
          "Satswap is a revolutionary hybrid cryptocurrency exchange, specifically designed to optimize trading of Bitcoin Ordinals (BRC20 tokens) and other crytocurrencies. The next-gen hybrid exchange for BRC20 Bitcoin Ordinals",
       tags: [
@@ -150,7 +150,7 @@ const projects = [
       live_url_link: "https://www.satsswap.io/",
    },
    {
-      name: "TechyScholar App",
+      name: "Advance pay",
       description:
          "Mobile-app platform that allows users to create account and also search, view, and monitor their courses. And it also allows users to watch this courses on the platform. This platform also filters courses based on skills and complexity",
       tags: [
@@ -176,7 +176,7 @@ const projects = [
       live_url_link: "",
    },
    {
-      name: "Genie",
+      name: "Invoice discounting",
       description:
          "Web-based state-of-the-art AI SaaS Platform with five AI tools. This AI tools are image generation, video generation, music generation, code generation and conversation. Powered by the Next.js, this platform is not only be efficient but also user-centric.",
       tags: [

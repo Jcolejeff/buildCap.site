@@ -86,7 +86,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
                </NavigationMenuItem>
                <NavigationMenuItem>
                   <span
-                     className={`  lg:text-[1.15rem] block px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] cursor-pointer `}
+                     className={` lg:text-[1.15rem] block px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] cursor-pointer `}
                   >
                      <a href={url("/pricing")}>Pricing </a>
                   </span>
@@ -113,19 +113,17 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
                   </NavigationMenuTrigger>
                   {/* bigger drop needs to be built when data and use case exists for other category types defined */}
                   <NavigationMenuContent className="!w-[15.8125rem] p-[1.5rem] flex flex-col gap-[1.5rem]">
-                     {toolsData[0]?.data
-                        ?.filter((i: any) => i?.category === "features")
-                        .map((i: any, idx: number) => (
-                           <NavigationMenuItem key={idx} className="list-none group cursor-pointer">
-                              <a
-                                 href={url(i?.link)}
-                                 className="text-[1.1rem]k group-hover:!text-secondary-2  group-hover:!text-gray-400 font-[500] leading-[1.5rem] tracking-[0.005rem] cursor-pointer transition-colors duration-300 ease-in-out"
-                              >
-                                 <p className="font-semibold">{capitalizeFirstLetter("jeff")}</p>
-                                 <p className="text-base">a new way</p>
-                              </a>
-                           </NavigationMenuItem>
-                        ))}
+                     {toolsData[0]?.data.map((i: any, idx: number) => (
+                        <NavigationMenuItem key={idx} className="list-none group cursor-pointer">
+                           <a
+                              href={url(i?.link)}
+                              className="text-[1.1rem]k group-hover:!text-secondary-2  group-hover:!text-gray-400 font-[500] leading-[1.5rem] tracking-[0.005rem] cursor-pointer transition-colors duration-300 ease-in-out"
+                           >
+                              <p className="font-semibold">{capitalizeFirstLetter("jeff")}</p>
+                              <p className="text-base">a new way</p>
+                           </a>
+                        </NavigationMenuItem>
+                     ))}
                   </NavigationMenuContent>
                </NavigationMenuItem>
             </NavigationMenuList>
