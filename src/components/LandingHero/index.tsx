@@ -1,13 +1,15 @@
 import TextFormat from "lib/helpers/TextFormat";
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
-
+import HeroSlide from "./TextSlide";
 import { url } from "lib/utils";
 
 import { cn } from "lib/utils";
 interface IProps {}
 
 const LandingPageHero = () => {
+   const [index, setIndex] = useState(0);
+
    return (
       <section className="w-full pt-[3rem]        md:pt-[5rem] container px-container-base lg:px-container-lg xl:px-container-xl  relative max-w-[1700px]">
          <div className="w-full flex flex-col md:grid md:grid-cols-[1fr_1fr] gap-[0.5rem] md:gap-[2.75rem]  justify-center  relative ">
@@ -17,13 +19,17 @@ const LandingPageHero = () => {
                   <p className=" font-[600] text-sm md:text-lg">Backed by Z Combinator</p>
                   <img src="images/landing-page/arrow.svg" alt="" />
                </div>
-               <h1 className="font-[700] text-secondary-2 text-center    text-[2rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]">
-                  <TextFormat
-                     text={`Financial solutions built for subcontractors`}
-                     keyword={"The BuildCAP"}
-                     keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
-                  />
-               </h1>
+               <div>
+                  <h1 className="font-[700] text-secondary-2 text-center    text-[2rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]">
+                     <TextFormat
+                        text={`Financial solutions built for`}
+                        keyword={"The BuildCAP"}
+                        keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
+                     />
+                  </h1>
+                  <HeroSlide />
+               </div>
+
                <Fade bottom>
                   <h2 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
                      A construction technology platform thst enables businesses grow without
