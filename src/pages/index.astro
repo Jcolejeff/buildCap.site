@@ -15,7 +15,7 @@ import ProductInfo from "components/ProductInfo";
 import InfoAboutCompany from "components/InfoAboutCompany";
 import HowToSections from "components/HowToSections";
 import Feedbacks from "components/Feedbacks";
-
+import InfoGrid from "components/InfoGrid";
 const data = [
    {
       image: "/images/receipts/iconOne.svg",
@@ -187,53 +187,7 @@ const images = [
                </span>
             </a>
          </div>
-         <div>
-            <p
-               class="text-[1rem] md:text-[1.2rem] md:leading-[1.7rem] tracking-[0.00563rem] max-w-[37.75rem] mb-3"
-            >
-               BuildCAP is a business management, finance and marketing tool that helps your
-               business be more organized and grow!
-            </p>
-            <div class="hidden md:flex gap-4">
-               <a
-                  href="#"
-                  class={cn(
-                     "md:w-fit px-6  py-4  justify-center items-center rounded-md bg-primary-1 shadow-1 hover:opacity-90 active:opacity-100 transition-opacity duration-300 ease-in-out hidden md:flex md:px-16 ",
-                  )}
-               >
-                  <span class="text-white font-[500] leading-[1.5rem] tracking-[0.02875rem]">
-                     Get Started
-                  </span>
-               </a>
-               <a
-                  href={url("request-demo")}
-                  class={cn(
-                     "md:w-fit px-6  py-4  justify-center items-center rounded-md border-primary-1 border  hover:opacity-90 active:opacity-100 transition-opacity duration-300 ease-in-out hidden md:flex md:px-12 ",
-                  )}
-               >
-                  <span class="font-[500] leading-[1.5rem] tracking-[0.02875rem]">
-                     Request a Demo
-                  </span>
-               </a>
-            </div>
-            <section class="grid md:mt-20 md:grid-cols-[1fr_1fr] gap-[3rem] rounded-lg">
-               {
-                  data.map((item: any) => {
-                     return (
-                        <article class=" px-5 py-8 md:py-12 gap-12 justify-between  flex flex-col  items-start border-[1px] rounded-2xl">
-                           <img src={url(item.image)} alt="" />
-                           <div class="flex flex-col gap-4  px-2">
-                              <h3 class="font-semibold text-2xl">{item.heading}</h3>
-                              <p class="text-[1.1rem] leading-[130%] md:leading-[2rem] tracking-[0.02rem] md:tracking-[0.0225rem]">
-                                 {item.paragraph}
-                              </p>
-                           </div>
-                        </article>
-                     );
-                  })
-               }
-            </section>
-         </div>
+         <InfoGrid client:only />
       </section>
    </section>
 
