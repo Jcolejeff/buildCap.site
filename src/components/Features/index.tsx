@@ -32,7 +32,7 @@ const Features = () => {
       <>
          <motion.div variants={textVariant(0.1)}>
             <div className="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
-               <h1 className="font-[700] header__hero--heading-gradient text-center text-[1.6rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[90rem] lg:ml-[-0.2rem]">
+               <h1 className="font-[700] header__hero--heading-gradient text-center text-[1.6rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[90rem] lg:ml-[-0.2rem]">
                   <TextFormat
                      text={`Why Choose buildCAP `}
                      keyword={"The BuildCAP"}
