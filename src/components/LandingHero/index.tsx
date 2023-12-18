@@ -32,8 +32,7 @@ const LandingPageHero = () => {
 
                <Fade bottom>
                   <h2 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
-                     A construction technology platform thst enables businesses grow without
-                     worrying about capital.
+                     Revolutionizing Construction Financing for Subcontractors in Nigeria
                   </h2>
                </Fade>
 

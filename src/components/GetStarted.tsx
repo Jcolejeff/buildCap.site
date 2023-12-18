@@ -133,7 +133,7 @@ const GetStartedForm = () => {
                </h3>
 
                <h4 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
-                  Join BuildCAP Today!"
+                  Join BuildCAP Today!
                </h4>
             </div>
 
@@ -263,7 +263,7 @@ const GetStartedForm = () => {
          </section>
          <div className=" hidden md:block rounded-md transition-all duration-300 ease-in-out  w-1/2  bg-center bg-cover   filter hover:cursor-pointer">
             <img
-               src={url("/images/modal.webp")}
+               src={url("/images/modal.jpg")}
                className="w-full object-cover  md:h-[350px] rounded-md"
                alt=""
             />

@@ -110,33 +110,13 @@ const images = [
       <section
          class="w-full py-[10rem] text-white container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px]"
       >
-         <div class="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
-            <div class="flex items-center gap-4 bg-secondary-1/25 py-3 px-6 rounded-full">
-               <p class="font-[600] text-center text-sm md:text-lg">
-                  WHY SHOULD YOU CHOOSE AI BuildCAP?
-               </p>
-            </div>
-            <h1
-               class="font-[700] text-white text-center text-[1.6rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] gradient-text transition-all duration-500 ease-in-out md:max-w-[90rem] lg:ml-[-0.2rem]"
-            >
-               <TextFormat
-                  text={`Used by subcontractors on projects across the country `}
-                  keyword={"The BuildCAP"}
-                  keywordClassName="text-primary-1  transition-all duration-500 ease-in-out"
-               />
-            </h1>
-         </div>
-
-         <Features client:load />
+         <Features client:only />
       </section>
       <section class="w-full bg-primary-2">
          <section
             class="w-full py-[3rem] md:py-[8rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
          >
             <div class="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
-               <div class="flex items-center py-3 px-6 rounded-full">
-                  <img src="images/pricing/hunt.svg" alt="" class="w-40 md:w-full" />
-               </div>
                <h1
                   class="font-[700] text-secondary-2 text-center text-[1.6rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]"
                >
@@ -197,24 +177,34 @@ const images = [
    <!-- test animaions -->
    <section class="w-full bg-primary-1 scroll-mt-28" id="download">
       <section
-         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] border text-white"
+         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] text-white"
       >
          <InfoAboutCompany client:only />
+      </section>
+   </section>
+   <section class="w-full scroll-mt-28 bg-primary-1">
+      <section
+         class="w-full container pt-24 px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
+      >
+         <div class="flex flex-col justify-center items-center sm:text-center lg:px-8 px-6 gap-6">
+            <p class="text-2xl font-bold tracking-tight text-center text-white lg:text-4xl">
+               See What Our Customer Says
+            </p>
+            <p class="leading-8 text-center text-white font-medium text-lg">
+               See how our app transforms our customer’s finances and can
+               <br />do the same for you.
+            </p>
+            <div class="w-12 h-[0.15rem] bg-white"></div>
+         </div>
+         <ReviewSide client:load />
       </section>
    </section>
    <!-- test animaions -->
    <section class="w-full bg-primary-1 scroll-mt-28" id="download">
       <section
-         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] border text-white"
+         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] text-white"
       >
          <HowToSections client:only />
-      </section>
-   </section>
-   <section class="w-full bg-primary-1 scroll-mt-28" id="download">
-      <section
-         class="w-full py-[4rem] md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] border text-white"
-      >
-         <Feedbacks client:only />
       </section>
    </section>
 
@@ -251,56 +241,9 @@ const images = [
          </div>
       </section>
    </section>
-   <section class="w-full scroll-mt-28 bg-primary-1">
-      <section
-         class="w-full container pt-24 px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
-      >
-         <div class="flex flex-col justify-center items-center sm:text-center lg:px-8 px-6 gap-6">
-            <p class="text-2xl font-bold tracking-tight text-center text-white lg:text-4xl">
-               See What Our Customer Says
-            </p>
-            <p class="leading-8 text-center text-white font-medium text-lg">
-               See how our app transforms our customer’s finances and can
-               <br />do the same for you.
-            </p>
-            <div class="w-12 h-[0.15rem] bg-white"></div>
-         </div>
-         <ReviewSide client:load />
-      </section>
-   </section>
    <section
       class="rounded-lg w-full py-[3rem] pb-20 md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
    >
       <GetStarted client:only />
-   </section>
-   <section
-      class="rounded-lg w-full py-[3rem] pb-20 md:py-[10rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
-   >
-      <div class="flex flex-col justify-center items-center sm:text-center lg:px-8 px-6 gap-6">
-         <p class="text-2xl font-bold tracking-tight text-center lg:text-4xl">
-            B2B payments made easy
-         </p>
-         <p class="leading-8 text-center font-medium text-lg">
-            Providing essential capital (project based)
-         </p>
-         <div class="w-12 h-[0.15rem] bg-primary-1"></div>
-      </div>
-      <div class="grid mt-12 md:grid-cols-[1fr_1fr_1fr] gap-[3rem]">
-         {
-            sections.map((item) => {
-               return (
-                  <article class=" bg-slate-200/50 px-5 py-8 md:py-20  flex gap-4 items-center border-[3px] rounded-lg">
-                     <img src={url(item.img)} alt="" />
-                     <div class="flex flex-col gap-4  px-2">
-                        <h3 class="font-semibold text-2xl">{item.heading}</h3>
-                        <p class="text-[1.1rem] leading-[130%] md:leading-[2rem] tracking-[0.02rem] md:tracking-[0.0225rem]">
-                           {item.paragraph}
-                        </p>
-                     </div>
-                  </article>
-               );
-            })
-         }
-      </div>
    </section>
 </Layout>

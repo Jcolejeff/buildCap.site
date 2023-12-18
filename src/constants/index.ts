@@ -34,55 +34,53 @@ const services = [
 
 const experiences = [
    {
-      title: "Code Mentor",
+      title: "Get the financial support you need for any project, current or in pipeline",
       company_name: "Teqia",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",
       date: "Jun 2023 - Present",
       points: [
-         "provided guidance, support, and mentorship to students or learners. assist learners in understanding & mastering coding concepts, programming languages, and best practices.",
-         "engaged in one-on-one or small group sessions with students. Answer questions, review code, and help learners overcome specific challenges they encounter during their learning journey.",
-         "offered career advice and insights into the tech industry. assisted students with resume building, interview preparation, and job search strategies.",
+         "Bid on bigger projects knowing you have the support to take them on.",
+         "Cover your upfront costs to get new projects off the ground.",
+         "Access funds to meet the immediate needs of your business.",
       ],
    },
    {
-      title: "Lead Frontend Developer",
+      title: "Unlock solutions that flex with the changing needs of your business",
       company_name: "Tanta Innovative Ltd",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#383E56",
       date: "Feb 2023 - August 2023",
       points: [
-         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-         "Participating in code reviews and providing constructive feedback to other developers.",
-         "Successfully led the development and launch of 5  innovative e-commerce platform, resulting in a 10% increase in user engagement, 25% in sales and 24/7  customer support.",
-         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+         "Get project-based lines of credit specifically built for the needs of construction businesses.",
+         "Safeguard your lines of credit and grow your bonding capacity.",
+         "Increase your buying power with vendors and maximize material discounts.",
       ],
    },
    {
-      title: "Web Developer",
+      title: "With Billd in your toolbelt you can plan for your business on your terms",
       company_name: "Street Bazaar",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",
       date: "Sept 2022 - May 2023",
       points: [
-         "Developed and maintained web applications using React.js and other related technologies.",
-         "Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-         "Participated in code reviews and providing constructive feedback to other developers.",
-         "Conducted code reviews and provided feedback to team members to ensure best practices were followed.",
+         "Gain stability and predictability through streamlined accounts receivables.",
+         "Leverage your new competitive advantage to plan for the growth you want.",
+         "Invest in the parts of your business that make sense for your long term plan.",
       ],
    },
-   {
-      title: "Training Manager",
-      company_name: "Symbolic Digital Concept",
-      icon: "/images/landing-page/zcomb.svg",
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-         "Created effective instructional materials, including lesson plans, learning resources, and assessments. I employed instructional design principles to enhance the learning experience.",
-         "Monitored and evaluated the quality of teaching and learning within the organization. This includes assessing instructors, course materials, and overall program effectiveness",
-         "Oversaw a team of instructors, mentors, and support staff. Also coordinated training schedules, assignments, and professional development for their team.",
-      ],
-   },
+   // {
+   //    title: "Training Manager",
+   //    company_name: "Symbolic Digital Concept",
+   //    icon: "/images/landing-page/zcomb.svg",
+   //    iconBg: "#383E56",
+   //    date: "Jan 2022 - Jan 2023",
+   //    points: [
+   //       "Created effective instructional materials, including lesson plans, learning resources, and assessments. I employed instructional design principles to enhance the learning experience.",
+   //       "Monitored and evaluated the quality of teaching and learning within the organization. This includes assessing instructors, course materials, and overall program effectiveness",
+   //       "Oversaw a team of instructors, mentors, and support staff. Also coordinated training schedules, assignments, and professional development for their team.",
+   //    ],
+   // },
 ];
 
 const testimonials = [
@@ -123,23 +121,22 @@ const testimonials = [
 const projects = [
    {
       name: "Material financing",
-      description:
-         "Satswap is a revolutionary hybrid cryptocurrency exchange, specifically designed to optimize trading of Bitcoin Ordinals (BRC20 tokens) and other crytocurrencies. The next-gen hybrid exchange for BRC20 Bitcoin Ordinals",
+      description: "Never come out of pocket to pay for materials",
       tags: [
          {
-            name: "nextjs",
+            name: "We buy materials from your supplier upfront.",
             color: "blue-text-gradient",
          },
          {
-            name: "chakraui",
+            name: "You pay us when you’re paid. It’s that simple.",
             color: "green-text-gradient",
          },
          {
-            name: "mongodb",
+            name: "Gain better leverage to negotiate discounts with suppliers",
             color: "pink-text-gradient",
          },
          {
-            name: "typescript",
+            name: "Gain better leverage to negotiate discounts with suppliers",
             color: "blue-text-gradient",
          },
       ],
@@ -151,23 +148,22 @@ const projects = [
    },
    {
       name: "Advance pay",
-      description:
-         "Mobile-app platform that allows users to create account and also search, view, and monitor their courses. And it also allows users to watch this courses on the platform. This platform also filters courses based on skills and complexity",
+      description: "Get paid on your terms",
       tags: [
          {
-            name: "react-native",
+            name: "Unlock the money you’ve already earned on your terms.",
             color: "blue-text-gradient",
          },
          {
-            name: "expo",
+            name: "Get paid on your pay app today.",
             color: "green-text-gradient",
          },
          {
-            name: "strapi",
+            name: "Meet the immediate needs of your business.",
             color: "pink-text-gradient",
          },
          {
-            name: "mysql",
+            name: "Enjoy predictable accounts receivable and pay back when you're paid up to 60 days.",
             color: "blue-text-gradient",
          },
       ],
@@ -177,27 +173,22 @@ const projects = [
    },
    {
       name: "Invoice discounting",
-      description:
-         "Web-based state-of-the-art AI SaaS Platform with five AI tools. This AI tools are image generation, video generation, music generation, code generation and conversation. Powered by the Next.js, this platform is not only be efficient but also user-centric.",
+      description: "Get paid on your terms",
       tags: [
          {
-            name: "nextjs",
+            name: "Unlock the money you’ve already earned on your terms.",
             color: "blue-text-gradient",
          },
          {
-            name: "tailwind",
+            name: "Get paid on your pay app today.",
             color: "green-text-gradient",
          },
          {
-            name: "prisma",
+            name: "Meet the immediate needs of your business.",
             color: "pink-text-gradient",
          },
          {
-            name: "mysql",
-            color: "green-text-gradient",
-         },
-         {
-            name: "clerk",
+            name: "Enjoy predictable accounts receivable and pay back when you're paid up to 60 days.",
             color: "blue-text-gradient",
          },
       ],

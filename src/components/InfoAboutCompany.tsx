@@ -32,35 +32,13 @@ const Card = ({
                scale: 1,
                speed: 450,
             }}
-            className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border"
+            className="bg-tertiary p-12 pb-20 rounded-2xl sm:w-[360px] w-full border border-gray-600"
          >
-            <div className="relative h-[230px] w-full">
+            {/* <div className="relative h-[230px] w-full">
                <img src={image} alt={name} className="object-cover rounded-2xl h-full w-full" />
 
-               <div className="absolute inset-0 flex justify-end m-3 card-img__hover">
-                  <div
-                     onClick={() => window.open(source_code_link, "_blank")}
-                     className="black-gradient w-10 h-10 mr-2 rounded-full flex justify-center items-center cursor-pointer"
-                  >
-                     <img
-                        src={"/images/landing-page/zcomb.svg"}
-                        alt={"github"}
-                        className="h-1/2 w-1/2 object-contain"
-                     />
-                  </div>
-
-                  <div
-                     onClick={() => window.open(live_url_link, "_blank")}
-                     className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                  >
-                     <img
-                        src={"/images/landing-page/zcomb.svg"}
-                        alt={"website link"}
-                        className="h-1/2 w-1/2 object-contain"
-                     />
-                  </div>
-               </div>
-            </div>
+              
+            </div> */}
             <div className="mt-5">
                <h3 className="text-white font-bold text-[24px]">{name}</h3>
                <p className="text-secondary text-[14px]">{description}</p>
@@ -92,7 +70,7 @@ const InfoAboutCompany = () => {
          <motion.div variants={textVariant(0.1)}>
             <p className=" font-[16px] mt-4 leading-[30px]">buildCap PRODUCTS</p>
             <h3 className={`${styles.sectionHeadText}`}>
-               <span className="section__gradient max-w-[70rem]">
+               <span className="heading-gradient max-w-[70rem]">
                   Free your business from the broken repayment chain{" "}
                </span>{" "}
             </h3>
