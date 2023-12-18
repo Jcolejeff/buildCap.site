@@ -58,7 +58,7 @@ const experiences = [
       ],
    },
    {
-      title: "With Billd in your toolbelt you can plan for your business on your terms",
+      title: "With buildCap in your toolbelt you can plan for your business on your terms",
       company_name: "Street Bazaar",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",

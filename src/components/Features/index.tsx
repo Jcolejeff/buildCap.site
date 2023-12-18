@@ -66,7 +66,7 @@ const Features = () => {
             <section className="grid mt-12 md:grid-cols-[1fr_1fr_1fr] gap-[3rem] rounded-lg">
                {sections.map((item, key) => {
                   return (
-                     <motion.div key={key} variants={fadeIn("up", "spring", key * 0.5, 0.75)}>
+                     <motion.div key={key} variants={fadeIn("left", "spring", key * 0.5, 0.75)}>
                         <Tilt
                            options={{
                               max: 45,

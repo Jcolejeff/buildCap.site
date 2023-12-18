@@ -74,12 +74,12 @@ const GetStartedForm = () => {
       setFormIsLoading(true);
 
       try {
-         const data = await emailjs.sendForm(
-            "service_f2ja3b8",
-            "template_6z8o098",
-            formRef.current as HTMLFormElement,
-            "30meubG4UgtRoKoLr",
-         );
+         // const data = await emailjs.sendForm(
+         //    "service_f2ja3b8",
+         //    "template_6z8o098",
+         //    formRef.current as HTMLFormElement,
+         //    "30meubG4UgtRoKoLr",
+         // );
          // setMessage({ text: data?.text, isError: false });
          toast.info("Thanks for signing up, We will notify you when we launch!", {
             position: "top-right",
@@ -114,7 +114,7 @@ const GetStartedForm = () => {
       setFormIsLoading(false);
    }
    const BUSINESS_TYPES = [
-      { text: "General Contractor", value: "General Contractor" },
+      { text: "Main Contractor", value: "Main Contractor" },
       { text: "Subcontractor", value: "Subcontractor" },
       { text: "Supplier", value: "Supplier" },
       { text: "Other", value: "Other" },
@@ -124,7 +124,7 @@ const GetStartedForm = () => {
       <div className=" flex flex-col md:flex-row justify-center  items-center my-8   gap-[2rem]">
          <section className="md:w-1/2 flex flex-col items-center gap-6 ">
             <div>
-               <h3 className="font-[600] text-secondary-2 text-center text-[1.7rem] md:text-[2rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[60rem] ">
+               <h3 className="font-[600] text-secondary-2 text-center text-[1.7rem] md:text-[2rem] leading-[130%] md:leading-[3rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[60rem] mb-4 ">
                   <TextFormat
                      text={`Ready to Transform Your Construction Projects?`}
                      keyword={"building"}

@@ -61,7 +61,7 @@ const ReviewSlide = () => {
    const reviews = [
       {
          img: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-         text: ` “Everydaymoney app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances."`,
+         text: ` “buildCap app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances."`,
          date: "15 may 2023",
       },
       {
@@ -72,7 +72,7 @@ const ReviewSlide = () => {
       {
          img: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
 
-         text: `Everydaymoney app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances.`,
+         text: `buildCap app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances.`,
          date: " 10 February 2023",
       },
    ];
