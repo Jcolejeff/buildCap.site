@@ -60,7 +60,7 @@ const HeroSlide = () => {
             slidesToShow={1}
             indicators={false}
             cssClass=""
-            duration={4000}
+            duration={2500}
             //    responsive={responsiveSettings}
          >
             {reviews.map((item, index) => {
