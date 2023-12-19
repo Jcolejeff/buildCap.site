@@ -34,39 +34,39 @@ const services = [
 
 const experiences = [
    {
-      title: "Get the financial support you need for any project, current or in pipeline",
+      title: "Secure the necessary funding for any ongoing or planned project.",
       company_name: "Teqia",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",
       date: "Jun 2023 - Present",
       points: [
-         "Bid on bigger projects knowing you have the support to take them on.",
-         "Cover your upfront costs to get new projects off the ground.",
-         "Access funds to meet the immediate needs of your business.",
+         "Confidently bid on larger projects, assured by the backing to handle them.",
+         "Obtain financing to cover initial expenses, setting new ventures in motion.",
+         "Secure capital to address your business's immediate financial requirements.",
       ],
    },
    {
-      title: "Unlock solutions that flex with the changing needs of your business",
+      title: "Discover adaptable solutions that evolve in tandem with your business's dynamic requirements.",
       company_name: "Tanta Innovative Ltd",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#383E56",
       date: "Feb 2023 - August 2023",
       points: [
-         "Get project-based lines of credit specifically built for the needs of construction businesses.",
-         "Safeguard your lines of credit and grow your bonding capacity.",
-         "Increase your buying power with vendors and maximize material discounts.",
+         "Access tailored project-based credit lines designed for construction business demands.",
+         "Protect your credit lines while expanding your bonding capabilities.",
+         "Enhance your purchasing leverage with suppliers to optimize material cost savings.",
       ],
    },
    {
-      title: "With buildCap in your toolbelt you can plan for your business on your terms",
+      title: "Empower Your Business Planning on Your Terms with buildCap in Your Arsenal",
       company_name: "Street Bazaar",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",
       date: "Sept 2022 - May 2023",
       points: [
-         "Gain stability and predictability through streamlined accounts receivables.",
-         "Leverage your new competitive advantage to plan for the growth you want.",
-         "Invest in the parts of your business that make sense for your long term plan.",
+         "Achieve stability and predictability with efficient management of accounts receivables.",
+         "Utilize your newfound competitive edge to strategize for desired growth.",
+         "Focus investments on areas of your business that align with your long-term objectives.",
       ],
    },
    // {
@@ -146,56 +146,56 @@ const projects = [
       source_code_link: "https://github.com/Iysah",
       live_url_link: "https://www.satsswap.io/",
    },
-   {
-      name: "Advance pay",
-      description: "Get paid on your terms",
-      tags: [
-         {
-            name: "Unlock the money you’ve already earned on your terms.",
-            color: "blue-text-gradient",
-         },
-         {
-            name: "Get paid on your pay app today.",
-            color: "green-text-gradient",
-         },
-         {
-            name: "Meet the immediate needs of your business.",
-            color: "pink-text-gradient",
-         },
-         {
-            name: "Enjoy predictable accounts receivable and pay back when you're paid up to 60 days.",
-            color: "blue-text-gradient",
-         },
-      ],
-      image: "/images/landing-page/zcomb.svg",
-      source_code_link: "https://github.com/Iysah/techyscholar-edu-app",
-      live_url_link: "",
-   },
-   {
-      name: "Invoice discounting",
-      description: "Get paid on your terms",
-      tags: [
-         {
-            name: "Unlock the money you’ve already earned on your terms.",
-            color: "blue-text-gradient",
-         },
-         {
-            name: "Get paid on your pay app today.",
-            color: "green-text-gradient",
-         },
-         {
-            name: "Meet the immediate needs of your business.",
-            color: "pink-text-gradient",
-         },
-         {
-            name: "Enjoy predictable accounts receivable and pay back when you're paid up to 60 days.",
-            color: "blue-text-gradient",
-         },
-      ],
-      image: "/images/landing-page/zcomb.svg",
-      source_code_link: "https://github.com/Iysah/genie-ai",
-      live_url_link: "",
-   },
+   // {
+   //    name: "Advance pay",
+   //    description: "Get paid on your terms",
+   //    tags: [
+   //       {
+   //          name: "Unlock the money you’ve already earned on your terms.",
+   //          color: "blue-text-gradient",
+   //       },
+   //       {
+   //          name: "Get paid on your pay app today.",
+   //          color: "green-text-gradient",
+   //       },
+   //       {
+   //          name: "Meet the immediate needs of your business.",
+   //          color: "pink-text-gradient",
+   //       },
+   //       {
+   //          name: "Enjoy predictable accounts receivable and pay back when you're paid up to 60 days.",
+   //          color: "blue-text-gradient",
+   //       },
+   //    ],
+   //    image: "/images/landing-page/zcomb.svg",
+   //    source_code_link: "https://github.com/Iysah/techyscholar-edu-app",
+   //    live_url_link: "",
+   // },
+   // {
+   //    name: "Invoice discounting",
+   //    description: "Get paid on your terms",
+   //    tags: [
+   //       {
+   //          name: "Unlock the money you’ve already earned on your terms.",
+   //          color: "blue-text-gradient",
+   //       },
+   //       {
+   //          name: "Get paid on your pay app today.",
+   //          color: "green-text-gradient",
+   //       },
+   //       {
+   //          name: "Meet the immediate needs of your business.",
+   //          color: "pink-text-gradient",
+   //       },
+   //       {
+   //          name: "Enjoy predictable accounts receivable and pay back when you're paid up to 60 days.",
+   //          color: "blue-text-gradient",
+   //       },
+   //    ],
+   //    image: "/images/landing-page/zcomb.svg",
+   //    source_code_link: "https://github.com/Iysah/genie-ai",
+   //    live_url_link: "",
+   // },
 ];
 
 export { services, experiences, testimonials, projects };

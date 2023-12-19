@@ -34,17 +34,17 @@ const HeroSlide = () => {
 
    const reviews = [
       {
-         color: "orange-text-gradient",
+         color: "text-[#ffc504]",
          text: `Contractors`,
          date: "15 may 2023",
       },
       {
-         color: "header__hero--heading-gradient",
+         color: "text-[#EB6802]",
          text: `Subcontractors`,
          date: "25 june 2023",
       },
       {
-         color: "blue-text-gradient ",
+         color: "text-primary-1 ",
          text: `Suppliers`,
          date: " 10 February 2023",
       },
@@ -66,7 +66,7 @@ const HeroSlide = () => {
             {reviews.map((item, index) => {
                return (
                   <h1
-                     className={`font-[700] ${item.color} text-center    text-[2rem] md:text-[3rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem]`}
+                     className={`font-[700] ${item.color} text-center    text-[2rem] md:text-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem]`}
                   >
                      <TextFormat
                         text={item.text}

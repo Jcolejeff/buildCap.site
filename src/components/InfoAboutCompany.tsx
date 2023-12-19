@@ -5,6 +5,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+import TextFormat from "lib/helpers/TextFormat";
 interface CardProps {
    name: string;
    index: number;
@@ -32,7 +33,7 @@ const Card = ({
                scale: 1,
                speed: 450,
             }}
-            className="bg-tertiary p-12 pb-20 rounded-2xl sm:w-[360px] w-full border border-gray-600"
+            className="bg-tertiary p-12 pb-20 rounded-2xl w-full border border-white/90"
          >
             {/* <div className="relative h-[230px] w-full">
                <img src={image} alt={name} className="object-cover rounded-2xl h-full w-full" />
@@ -66,22 +67,27 @@ const Card = ({
 };
 const InfoAboutCompany = () => {
    return (
-      <>
+      <section className="flex">
          <motion.div variants={textVariant(0.1)}>
-            <p className=" font-[16px] mt-4 leading-[30px]">buildCap PRODUCTS</p>
-            <h3 className={`${styles.sectionHeadText}`}>
-               <span className="heading-gradient max-w-[70rem]">
-                  Free your business from the broken repayment chain{" "}
-               </span>{" "}
-            </h3>
+            <div className="gap-6 flex h-full justify-center items-center 2xl:gap-8 flex-col">
+               <p className=" font-[16px] mt-4 leading-[30px]">buildCap PRODUCTS</p>
+               <h5 className="font-[700] text-white text-center text-[1.6rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[80rem] lg:ml-[-0.2rem]">
+                  <TextFormat
+                     text={`Free your business from the broken repayment chain`}
+                     keyword={"business"}
+                     keywordClassName=" 
+                     text-secondary-1 transition-all duration-500 ease-in-out"
+                  />
+               </h5>
+            </div>
          </motion.div>
 
-         <div className="my-20 flex flex-wrap gap-7 justify-between">
+         <div className=" flex w-full flex-wrap gap-7 justify-center">
             {projects.map((project, index) => (
                <Card key={`project-${index}`} index={index} {...project} />
             ))}
          </div>
-      </>
+      </section>
    );
 };
 

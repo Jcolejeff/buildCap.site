@@ -37,17 +37,18 @@ const Features = () => {
       <>
          <motion.div variants={textVariant(0.1)}>
             <div className="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
-               <h1 className="font-[700] header__hero--heading-gradient text-center text-[1.6rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[90rem] lg:ml-[-0.2rem]">
+               <h1 className="font-[700] text-white text-center text-[1.6rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[90rem] lg:ml-[-0.2rem]">
                   <TextFormat
                      text={`Why Choose buildCAP `}
-                     keyword={"The BuildCAP"}
-                     keywordClassName="header__hero--heading-gradient   transition-all duration-500 ease-in-out"
+                     keyword={"buildCAP"}
+                     keywordClassName=" 
+                     text-secondary-1 transition-all duration-500 ease-in-out"
                   />
                </h1>
             </div>
          </motion.div>
 
-         <div className=" mt-20">
+         <div className=" mt-8">
             {/* <div className="flex w-full justify-center">
             <img src={active.img} alt="" className="w-full" />
          </div> */}
@@ -78,7 +79,7 @@ const Features = () => {
                               scale: 1,
                               speed: 450,
                            }}
-                           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-gray-600"
+                           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-white/90"
                         >
                            <article
                               onClick={() => {

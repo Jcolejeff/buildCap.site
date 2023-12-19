@@ -7,7 +7,7 @@ interface IFooter {}
 
 const Footer = ({}: IFooter) => {
    return (
-      <div className="w-full bg-primary-2  flex flex-col  max-w-[1700px] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative pt-[10rem]">
+      <div className="w-full bg-primary-20  flex flex-col  max-w-[1700px] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative pt-[10rem]">
          <div className="grid grid-cols-1 md:flex  md:justify-between  gap-[4rem] md:gap-[5.57rem] pb-12 md:pb-[8.29rem] border-b border-b-secondary-8/40">
             <div className="  gap-8  flex  flex-col  ">
                <div className="">

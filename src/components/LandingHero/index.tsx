@@ -20,7 +20,7 @@ const LandingPageHero = () => {
                   <img src="images/landing-page/arrow.svg" alt="" />
                </div> */}
                <div>
-                  <h1 className="font-[700] text-secondary-2 text-center    text-[2rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]">
+                  <h1 className="font-[700] text-secondary-2 text-center    text-[2rem] md:text-[4rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]">
                      <TextFormat
                         text={`Financial solutions built for`}
                         keyword={"The BuildCAP"}
@@ -31,14 +31,14 @@ const LandingPageHero = () => {
                </div>
 
                <Fade bottom>
-                  <h2 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
+                  <h2 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.5rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
                      Revolutionizing Construction Financing in Africa
                   </h2>
                </Fade>
 
                <div className="flex items-center   gap-4 transition-all duration-500 ease-in-out mb-5">
                   <a href="h" className="">
-                     <div className="flex items-center justify-center bg-black px-4 py-3 md:py-4 md:px-4 rounded-lg">
+                     <div className="flex items-center justify-center bg-primary-1 px-4 py-3 md:py-4 md:px-4 rounded-lg">
                         <p className="text-white  text-sm md:text-[1.1rem] font-bold tracking-wider">
                            Get Started
                         </p>

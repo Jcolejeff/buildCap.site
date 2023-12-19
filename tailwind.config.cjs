@@ -53,7 +53,7 @@ module.exports = {
             current: "currentColor",
             white: "#ffffff",
             primary: {
-               1: "#0F172A",
+               1: "#024EB5",
                2: "#F8FAFC",
                3: "#6062E8",
                4: "#5456CC",
@@ -71,7 +71,7 @@ module.exports = {
                17: "rgba(125, 65, 225, 0.25)",
                18: "#7D41E1",
                19: "#0649AC",
-               20: "#0E1330",
+               20: "#EBF3FF",
                21: "#F8F9FD",
             },
             secondary: {
