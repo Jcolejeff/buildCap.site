@@ -74,7 +74,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
             <NavigationMenuList>
                <NavigationMenuItem>
                   <span className=" lg:text-[1.15rem] block px-4   font-[400] leading-[1.5rem] tracking-[0.005rem] cursor-pointer">
-                     <a href={url("/")}>Overview</a>
+                     <a href={url("/")}>About</a>
                   </span>
                </NavigationMenuItem>
                <NavigationMenuItem>
@@ -88,7 +88,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
                   <span
                      className={` lg:text-[1.15rem] block px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] cursor-pointer `}
                   >
-                     <a href={url("/pricing")}>Pricing </a>
+                     <a href={url("/terms")}>Terms </a>
                   </span>
                </NavigationMenuItem>
 
@@ -101,7 +101,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
                </NavigationMenuItem>
             </NavigationMenuList>
          </NavigationMenu>
-         <NavigationMenu>
+         {/* <NavigationMenu>
             <NavigationMenuList>
                <NavigationMenuItem>
                   <NavigationMenuTrigger
@@ -111,7 +111,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
                   >
                      Tools
                   </NavigationMenuTrigger>
-                  {/* bigger drop needs to be built when data and use case exists for other category types defined */}
+                  
                   <NavigationMenuContent className="!w-[15.8125rem] p-[1.5rem] flex flex-col gap-[1.5rem]">
                      {toolsData[0]?.data.map((i: any, idx: number) => (
                         <NavigationMenuItem key={idx} className="list-none group cursor-pointer">
@@ -127,7 +127,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
                   </NavigationMenuContent>
                </NavigationMenuItem>
             </NavigationMenuList>
-         </NavigationMenu>
+         </NavigationMenu> */}
       </>
    );
 };
