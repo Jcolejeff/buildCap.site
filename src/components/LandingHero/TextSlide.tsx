@@ -66,7 +66,7 @@ const HeroSlide = () => {
             {reviews.map((item, index) => {
                return (
                   <h1
-                     className={`font-[700] ${item.color} text-center    text-[2rem] md:text-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem]`}
+                     className={`font-[700] ${item.color} max-w-[80rem] text-center text-[2rem]  leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[4rem] xxl:leading-[4rem]`}
                   >
                      <TextFormat
                         text={item.text}
