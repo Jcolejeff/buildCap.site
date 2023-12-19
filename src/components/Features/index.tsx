@@ -15,6 +15,11 @@ const Features = () => {
          img: " /images/landing-page/scale.svg",
       },
       {
+         heading: "B2B Payments Made Easy",
+         paragraph: "Pay your suppliers directly with buildCAP.",
+         img: " /images/landing-page/scale.svg",
+      },
+      {
          heading: "Secure Transactions",
          paragraph: "Safe and direct payments to suppliers.",
          img: " /images/landing-page/scale.svg",
@@ -63,7 +68,7 @@ const Features = () => {
                   );
                })}
             </div>
-            <section className="grid mt-12 md:grid-cols-[1fr_1fr_1fr] gap-[3rem] rounded-lg">
+            <section className="grid mt-12 md:grid-cols-[1fr_1fr_1fr_1fr] gap-[3rem] rounded-lg">
                {sections.map((item, key) => {
                   return (
                      <motion.div key={key} variants={fadeIn("left", "spring", key * 0.5, 0.75)}>
