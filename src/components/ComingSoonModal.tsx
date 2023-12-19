@@ -53,7 +53,7 @@ const ComingSoonModal = () => {
       defaultValues: {
          user_email: "",
          message:
-            "Hi,i just signed up to join the BuildCAP when you launch!, please notify me when you launch",
+            "Hi,i just signed up to join the buildCap when you launch!, please notify me when you launch",
       },
    });
 

@@ -23,13 +23,13 @@ export interface Props {
 export const prerender = true;
 
 let { title, darkNavBg, withoutBottomNav, withoutFAQ, withoutWhatBusinessSay } = Astro.props;
-const PAGE_TITLE = title != null && title?.length > 0 ? title : "BuildCAP - ";
+const PAGE_TITLE = title != null && title?.length > 0 ? title : "buildCap - ";
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="">
    <head itemscope itemtype="http://schema.org/WebSite">
-      <meta name="title" content="BuildCAP" />
+      <meta name="title" content="buildCap" />
 
       <meta
          name="description"
@@ -56,26 +56,26 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "BuildCAP - ";
          name="keywords"
          content="jobs, hire, employment, job search, job site, job vacancies, job openings, job listings, job opportunities, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment, job search, employment, job vacancies, job listings, job openings, job opportunities, job site, job search engine, work, find jobs, career, careers, job application, job search, recruitment"
       />
-      <meta itemprop="name" content="BuildCAP" />
-      <meta itemprop="url" content="https://BuildCAP.com/" />
-      <meta property="og:title" content="BuildCAP" />
+      <meta itemprop="name" content="buildCap" />
+      <meta itemprop="url" content="https://buildCap.com/" />
+      <meta property="og:title" content="buildCap" />
       <meta
          property="og:description"
          content="Empowering you to do the best work of your life with efficiency, speed and accuracy."
       />
-      <meta property="og:url" content="BuildCAP.com" />
+      <meta property="og:url" content="buildCap.com" />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="BuildCAP" />
+      <meta property="og:site_name" content="buildCap" />
       <!-- <meta property="og:image" content="/images/og-img.png" /> -->
 
       <title>
-         {PAGE_TITLE || "BuildCAP"}
+         {PAGE_TITLE || "buildCap"}
       </title>
       <script type="application/ld+json">
          {
             "@context": "http://schema.org",
             "@type": "Organization",
-            "url": "https://the-BuildCAP.com/",
+            "url": "https://the-buildCap.com/",
             "logo": "/images/logo.svg",
             "contactPoint": [
                {

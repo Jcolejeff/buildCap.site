@@ -23,7 +23,7 @@ const LandingPageHero = () => {
                   <h1 className="font-[700] text-secondary-2 text-center    text-[2rem] md:text-[4rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]">
                      <TextFormat
                         text={`Financial solutions built for`}
-                        keyword={"The BuildCAP"}
+                        keyword={"The buildCap"}
                         keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                      />
                   </h1>

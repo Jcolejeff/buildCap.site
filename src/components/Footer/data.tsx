@@ -7,18 +7,11 @@ export const FooterLinksData = [
       data: {
          category: "Company",
          links: [
-            // {
-            //    title: "The BuildCAP and Team",
-            //    url: "/about-us",
-            // },
             {
-               title: "Hire",
-               url: "#",
+               title: "About Us",
+               url: "/about-us",
             },
-            {
-               title: "Join the Team",
-               url: "#",
-            },
+
             {
                title: "Privacy Policy",
                url: "/privacy",
@@ -33,44 +26,27 @@ export const FooterLinksData = [
    },
 
    {
-      id: "services.md",
-      slug: "services",
-      body: "",
-      collection: "footerLinks",
-      data: {
-         category: "Documentation",
-         links: [
-            {
-               title: "Docs",
-               url: "#",
-            },
-            {
-               title: "Use Cases",
-               url: "#",
-            },
-            {
-               title: "API Reference",
-               url: "#",
-            },
-            {
-               title: "Tutorials",
-               url: "#",
-            },
-         ],
-      },
-      render: null,
-   },
-   {
       id: "socials.md",
       slug: "solutions",
       body: "",
       collection: "footerLinks",
       data: {
-         category: "solutions",
+         category: "Products",
          links: [
             {
-               title: "BuildCAP",
-               url: "https://www.facebook.com",
+               title: "Material Financing",
+               url: "#",
+               soon: false,
+            },
+            {
+               title: "Advance Payment",
+               url: "#",
+               soon: true,
+            },
+            {
+               title: "Invoice discounting",
+               url: "#",
+               soon: true,
             },
          ],
       },
@@ -94,7 +70,7 @@ export const FooterLinksData = [
             //    url: "#faq",
             // },
             {
-               title: "Support@BuildCAP.com",
+               title: "Support@buildCap.com",
                url: "mailto:support@joi.com",
             },
          ],

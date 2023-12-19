@@ -133,7 +133,7 @@ const GetStartedForm = () => {
                </h3>
 
                <h4 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
-                  Join BuildCAP Today!
+                  Join buildCap Today!
                </h4>
             </div>
 

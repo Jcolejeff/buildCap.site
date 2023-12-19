@@ -54,7 +54,7 @@ const sections = [
    {
       heading: "Suggest a Feature",
       paragraph:
-         "Helps us shape the future of our BuildCAP by sharing your thoughts on potential features",
+         "Helps us shape the future of our buildCap by sharing your thoughts on potential features",
       img: "/images/contact/support2.svg",
    },
    {
@@ -73,11 +73,11 @@ const images = [
 ];
 ---
 
-<Layout title="BuildCAP">
+<Layout title="buildCap">
    <section
       class="w-full mt-20"
       style={{
-         background: ` #EBF3FF url('/images/landing-page/bg.svg') no-repeat fixed  center / cover`,
+         background: ` #F8FAFC url('/images/landing-page/bg.svg') no-repeat fixed  center / cover`,
       }}
    >
       <LandingPageHero client:load />
@@ -91,7 +91,7 @@ const images = [
                      <h2
                         class="font-[500] mt-4 md:mt-10 text-center text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem] xxl:max-w-[45.875rem]"
                      >
-                        These businesses already use BuildCAP
+                        These businesses already use buildCap
                      </h2>
                   </Fade>
 
@@ -117,29 +117,28 @@ const images = [
             class="w-full py-[3rem] md:py-[8rem] container px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
          >
             <div class="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
-               <h1
-                  class="font-[700] text-secondary-2 text-center text-[1.6rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]"
-               >
-                  <TextFormat
-                     text={`“Our partnership with BuildCAP has proved very beneficial and promising for our cashflow needs.”`}
-                     keyword={"The BuildCAP"}
-                     keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
-                  />
-               </h1>
+               <Fade bottom client:load>
+                  <h1
+                     class="font-[700] text-secondary-2 text-center text-[1.6rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[80rem] lg:ml-[-0.2rem]"
+                  >
+                     <TextFormat
+                        text={`buildCap offers project based financing`}
+                        keyword={"buildCap"}
+                        keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
+                     />
+                  </h1>
+               </Fade>
 
-               <div
+               <!-- <div
                   class="flex items-center flex-col md:flex-row gap-4 transition-all duration-500 ease-in-out mb-5"
                >
                   <Fade bottom client:load>
                      <p class="text-sm md:text-xl text-gray-500">
-                        BuildCAP is rated 4.9/5 stars on product hunt reviews.
+                        buildCap is rated 4.9/5 stars on product hunt reviews.
                      </p>
                   </Fade>
-                  <!-- <div class="flex items-center gap-4 bg-secondary-1/25 py-3 px-6 rounded-full">
-                     <p class="font-[600] text-sm md:text-xl">See what they are saying</p>
-                     <img src="images/landing-page/arrow.svg" alt="" />
-                  </div> -->
-               </div>
+                
+               </div> -->
             </div>
          </section>
       </section>
@@ -182,7 +181,8 @@ const images = [
          <InfoAboutCompany client:only />
       </section>
    </section>
-   <section class="w-full scroll-mt-28 bg-primary-1">
+   <!-- customer reviews -->
+   <!-- <section class="w-full scroll-mt-28 bg-primary-1">
       <section
          class="w-full container pt-24 px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
       >
@@ -198,7 +198,7 @@ const images = [
          </div>
          <ReviewSide client:load />
       </section>
-   </section>
+   </section> -->
    <!-- test animaions -->
    <section class="w-full bg-primary-1 scroll-mt-28" id="download">
       <section
@@ -233,7 +233,7 @@ const images = [
                      class="flex items-center justify-center bg-white py-3 md:py-4 px-4 md:px-6 rounded-lg"
                   >
                      <p class="text-primary-1 text-sm md:text-lg font-bold tracking-wider">
-                        Get started with BuildCAP
+                        Get started with buildCap
                      </p>
                   </div>
                </a>

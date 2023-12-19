@@ -120,32 +120,31 @@ const testimonials = [
 
 const projects = [
    {
-      name: "Material financing",
-      description: "Never come out of pocket to pay for materials",
+      name: "Materials Financing",
+      description: "Avoid upfront costs for materials",
       tags: [
          {
-            name: "We buy materials from your supplier upfront.",
+            name: "We purchase materials from your supplier in advance.",
             color: "blue-text-gradient",
          },
          {
-            name: "You pay us when you’re paid. It’s that simple.",
+            name: "You reimburse us when you receive payment. It's straightforward.",
             color: "green-text-gradient",
          },
          {
-            name: "Gain better leverage to negotiate discounts with suppliers",
+            name: "Obtain greater negotiation power for discounts with suppliers.",
             color: "pink-text-gradient",
          },
          {
-            name: "Gain better leverage to negotiate discounts with suppliers",
+            name: "Enhance your ability to negotiate supplier discounts.",
             color: "blue-text-gradient",
          },
       ],
-
       image: "/images/landing-page/zcomb.svg",
-
       source_code_link: "https://github.com/Iysah",
       live_url_link: "https://www.satsswap.io/",
    },
+
    // {
    //    name: "Advance pay",
    //    description: "Get paid on your terms",

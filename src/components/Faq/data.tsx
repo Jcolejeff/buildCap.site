@@ -5,7 +5,7 @@ export const FAQdata = [
       body: "",
       collection: "faq",
       data: {
-         question: "How does BuildCAP pricing work?",
+         question: "How does buildCap pricing work?",
          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
       render: null,
@@ -38,7 +38,7 @@ export const FAQdata = [
       body: "",
       collection: "faq",
       data: {
-         question: "Does BuildCAP offer any discounts?",
+         question: "Does buildCap offer any discounts?",
          answer: "By lorem ipsum of lorem ipsum.",
       },
       render: null,

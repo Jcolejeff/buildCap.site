@@ -14,13 +14,13 @@ const Menu = () => {
    const ServicesData = [
       { title: "Home", link: "/" },
       { title: "Hire", link: "/hire" },
-      { title: "Join The BuildCAP", link: "/join" },
+      { title: "Join The buildCap", link: "/join" },
    ];
    const CompanyData = [
       // { title: "About Us", link: "/about-us" },
       { title: "Contact Us", link: "/contact-us" },
-      { title: "Terms of Service", link: "/Terms-of-use-The-BuildCAP.pdf" },
-      { title: "Privacy Policy", link: "/Privacy-Policy-BuildCAP.pdf" },
+      { title: "Terms of Service", link: "/Terms-of-use-The-buildCap.pdf" },
+      { title: "Privacy Policy", link: "/Privacy-Policy-buildCap.pdf" },
    ];
 
    return (
@@ -42,8 +42,8 @@ const Menu = () => {
             >
                <div className="w-full flex items-center justify-between border-b border-b-gray-300 lg:border-b-secondary-1 pb-[0.75rem] md:pb-[1rem] pt-[1.5rem]">
                   <a href="/" className="flex items-center gap-4">
-                     <img src={url("/images/logo.png")} alt="" className="w-8 md:w-12" />
-                     <p className="font-bold text-sm md:text-2xl">BuildCAP</p>
+                     <img src={url("/images/logoBlue.svg")} alt="" className="w-8 md:w-12" />
+                     <p className="font-bold text-sm md:text-2xl text-primary-1">buildCap</p>
                   </a>
 
                   <svg

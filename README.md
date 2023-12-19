@@ -1,7 +1,7 @@
-# BuildCAP landing
+# buildCap landing
 
 ```
-landing page for the BuildCAP platform
+landing page for the buildCap platform
 ```
 
 ## 🚀 Project Structure

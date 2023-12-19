@@ -8,7 +8,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 import TextFormat from "lib/helpers/TextFormat";
 
-const Card = ({ experience }: { experience: any }) => {
+const Card = ({ experience, index }: { experience: any; index: number }) => {
    return (
       <VerticalTimelineElement
          contentStyle={{ background: "#1d1836", color: "#fff", padding: "4rem" }}
@@ -17,11 +17,14 @@ const Card = ({ experience }: { experience: any }) => {
          iconStyle={{ background: experience.iconBg }}
          icon={
             <div className="flex justify-center items-center w-full h-full">
-               <img
+               {/* <img
                   src={experience.icon}
                   alt={experience.company_name}
                   className="h-[60%] w-[60%] object-contain"
-               />
+               /> */}
+               <p className={`text-xl font-bold ${index == 1 ? "text-white" : "text-black"}`}>
+                  {index + 1}
+               </p>
             </div>
          }
       >
@@ -58,7 +61,7 @@ const HowToSections = () => {
                   🤝
                </h5>
                <p className=" font-[16px] md:text-lg mt-4 leading-[30px]">
-                  Let's find out how BuildCAP can help you achieve your goals.
+                  Let's find out how buildCap can help you achieve your goals.
                </p>
             </div>
          </motion.div>
@@ -66,7 +69,7 @@ const HowToSections = () => {
          <div className="mt-20 flex flex-col">
             <VerticalTimeline>
                {experiences.map((experience, index) => (
-                  <Card key={index} experience={experience} />
+                  <Card key={index} experience={experience} index={index} />
                ))}
             </VerticalTimeline>
          </div>

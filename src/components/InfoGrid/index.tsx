@@ -11,7 +11,7 @@ const InfoGrid = () => {
          image: "/images/receipts/iconOne.svg",
          heading: "Connect with Main Contractors",
          paragraph:
-            "Start by linking up with your main contractor on BuildCAP and get your project rolling!.",
+            "Start by linking with your main contractor on buildCap and get your project rolling!.",
       },
       {
          image: "/images/receipts/iconTwo.svg",
@@ -29,7 +29,7 @@ const InfoGrid = () => {
    return (
       <div>
          <p className="text-[1rem] font-semibold md:text-[1.6rem] md:leading-[1.7rem] tracking-[0.00563rem] max-w-[37.75rem] mb-12">
-            Simplify Your Construction Financing With These Steps
+            How it works
          </p>
 
          <section className="grid md:mt-12 md:grid-cols-[1fr_1fr] gap-[3rem] rounded-lg">

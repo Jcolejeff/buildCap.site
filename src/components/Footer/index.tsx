@@ -12,8 +12,8 @@ const Footer = ({}: IFooter) => {
             <div className="  gap-8  flex  flex-col  ">
                <div className="">
                   <a href="/" className="flex items-center gap-4">
-                     <img src={url("/images/logo.png")} alt="" className="w-12" />
-                     <p className="font-bold text-2xl">BuildCAP</p>
+                     <img src={url("/images/logoBlue.svg")} alt="" className="w-12" />
+                     <p className="font-bold text-2xl text-primary-1">buildCap</p>
                   </a>
                </div>
             </div>
@@ -29,9 +29,14 @@ const Footer = ({}: IFooter) => {
                      {i?.data?.links?.map((i: any, idx: any) => (
                         <li
                            key={idx}
-                           className=" hover:text-secondary-3 transition-colors duration-300 ease-in-out cursor-pointer text-[17px]  tracking-[0.00625rem]"
+                           className="flex items-center hover:text-secondary-3 transition-colors duration-300 ease-in-out cursor-pointer text-[17px]  tracking-[0.00625rem]"
                         >
-                           <a href={i?.url}>{i?.title}</a>
+                           <a href={i?.url}>{i?.title} </a>
+                           {i?.soon && (
+                              <span className="capitalize bg-green-500 whitespace-nowrap text-white rounded-full px-2 py-1 text-[8px] ml-2 ">
+                                 coming soon
+                              </span>
+                           )}
                         </li>
                      ))}
                   </ul>
@@ -40,7 +45,8 @@ const Footer = ({}: IFooter) => {
          </div>
          <div className=" py-6 pt-9 gap-8 md:gap-0 flex flex-col-reverse md:flex-row justify-between">
             <p className="  font-semibold leading-[2rem] tracking-[0.00625rem]">
-               Copyright © {new Date().getFullYear()} AI BuildCAP All Rights Reserved
+               Copyright © {new Date().getFullYear()} buildCap Technology Limited All Rights
+               Reserved
             </p>
             <div className="flex w-1/2   gap-8">
                <img src={url("/images/footer/fb.svg")} alt="" />
