@@ -33,7 +33,7 @@ const Card = ({
                scale: 1,
                speed: 450,
             }}
-            className="bg-tertiary p-12 pb-20 rounded-2xl w-full border border-white/90"
+            className="bg-tertiary w-full rounded-2xl border border-white/90 p-12 pb-20"
          >
             {/* <div className="relative h-[230px] w-full">
                <img src={image} alt={name} className="object-cover rounded-2xl h-full w-full" />
@@ -41,14 +41,14 @@ const Card = ({
               
             </div> */}
             <div className="mt-5">
-               <h3 className="text-white font-bold text-[24px]">{name}</h3>
+               <h3 className="text-[24px] font-bold text-white">{name}</h3>
                <p className="text-secondary text-[14px]">{description}</p>
             </div>
-            <ul className="mt-5 list-disc ml-5 space-y-2">
+            <ul className="ml-5 mt-5 list-disc space-y-2">
                {tags.map((tag: any, index: number) => (
                   <li
                      key={`experience-point-${index}`}
-                     className="text-white-100 text-[14px] pl-1 tracking-wider"
+                     className="text-white-100 pl-1 text-[14px] tracking-wider"
                   >
                      {tag.name}
                   </li>
@@ -67,11 +67,11 @@ const Card = ({
 };
 const InfoAboutCompany = () => {
    return (
-      <section className="flex">
+      <section className="flex flex-col gap-12 lg:flex-row ">
          <motion.div variants={textVariant(0.1)}>
-            <div className="gap-6 flex h-full justify-center items-center 2xl:gap-8 flex-col">
-               <p className=" font-[16px] mt-4 leading-[30px]">buildCap PRODUCTS</p>
-               <h5 className="font-[700] text-white text-center text-[1.6rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[80rem] lg:ml-[-0.2rem]">
+            <div className="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
+               <p className=" mt-4 font-[16px] leading-[30px]">buildCap PRODUCTS</p>
+               <h5 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:leading-[3rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem]">
                   <TextFormat
                      text={`Free your business from the broken repayment chain`}
                      keyword={"business"}
@@ -82,7 +82,7 @@ const InfoAboutCompany = () => {
             </div>
          </motion.div>
 
-         <div className=" flex w-full flex-wrap gap-7 justify-center">
+         <div className=" flex w-full flex-wrap justify-center gap-7">
             {projects.map((project, index) => (
                <Card key={`project-${index}`} index={index} {...project} />
             ))}

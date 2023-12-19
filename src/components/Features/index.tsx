@@ -36,8 +36,8 @@ const Features = () => {
    return (
       <>
          <motion.div variants={textVariant(0.1)}>
-            <div className="gap-6 flex justify-center items-center 2xl:gap-8 flex-col">
-               <h1 className="font-[700] text-white text-center text-[1.6rem] md:text-[3rem] leading-[130%] md:leading-[4rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out md:max-w-[90rem] lg:ml-[-0.2rem]">
+            <div className="flex flex-col items-center justify-center gap-6 2xl:gap-8">
+               <h1 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[3rem]">
                   <TextFormat
                      text={`Why Choose buildCap `}
                      keyword={"buildCap"}
@@ -52,7 +52,7 @@ const Features = () => {
             {/* <div className="flex w-full justify-center">
             <img src={active.img} alt="" className="w-full" />
          </div> */}
-            <div className="flex mt-8 gap-4 w-full justify-center">
+            <div className="mt-8 flex w-full justify-center gap-4">
                {sections.map((item, key) => {
                   return (
                      <div
@@ -60,7 +60,7 @@ const Features = () => {
                            setActive(item);
                         }}
                         className={cn(
-                           ` border h-[4px]       w-20 bg-white transition-all duration-500 ease-in-out rounded-lg  cursor-pointer ${
+                           ` h-[4px] w-20       cursor-pointer rounded-lg border bg-white transition-all duration-500  ease-in-out ${
                               item.heading === active.heading && "opacity-100"
                            }`,
                         )}
@@ -69,7 +69,7 @@ const Features = () => {
                   );
                })}
             </div>
-            <section className="grid mt-12 md:grid-cols-[1fr_1fr_1fr_1fr] gap-[3rem] rounded-lg">
+            <section className="mt-12 grid grid-cols-1 gap-[3rem] rounded-lg md:grid-cols-2  lg:grid-cols-4 xl:grid-cols-4">
                {sections.map((item, key) => {
                   return (
                      <motion.div key={key} variants={fadeIn("left", "spring", key * 0.5, 0.75)}>
@@ -79,21 +79,21 @@ const Features = () => {
                               scale: 1,
                               speed: 450,
                            }}
-                           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-white/90"
+                           className="bg-tertiary w-full rounded-2xl border border-white/90 px-2  xxl:p-5"
                         >
                            <article
                               onClick={() => {
                                  setActive(item);
                               }}
                               className={cn(
-                                 `px-5 py-12  transition-all duration-500 ease-in-out rounded-lg  cursor-pointer ${
+                                 `cursor-pointer rounded-lg px-2  py-12 transition-all duration-500 ease-in-out  xxl:px-5 ${
                                     item.heading === active.heading && "opacity-100"
                                  }`,
                               )}
                            >
                               <div className="flex flex-col gap-4  px-2">
-                                 <h3 className="font-semibold text-2xl">{item.heading}</h3>
-                                 <p className="text-[1.1rem] leading-[130%] md:leading-[2rem] tracking-[0.02rem] md:tracking-[0.0225rem]">
+                                 <h3 className=" font-semibold md:text-base">{item.heading}</h3>
+                                 <p className="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
                                     {item.paragraph}
                                  </p>
                               </div>

@@ -11,7 +11,7 @@ const LandingPageHero = () => {
    const [index, setIndex] = useState(0);
 
    return (
-      <section className="container relative    w-full max-w-[1700px] px-container-base pt-[3rem] md:pb-[8rem] lg:px-container-lg lg:pt-[0.5rem]  xl:px-container-xl xxl:py-[5rem]">
+      <section className="container relative    w-full max-w-[1700px] px-container-base pt-[3rem] lg:px-container-lg lg:pb-[5rem] lg:pt-[0.5rem] xl:px-container-xl  xxl:py-[5rem] xxl:pb-[8rem]">
          <div className="relative flex w-full flex-col justify-center gap-[0.5rem] md:grid  md:grid-cols-[1fr_1fr]  md:gap-[2.75rem] ">
             <div className=" flex flex-col items-center justify-center  gap-6 2xl:gap-8">
                <div>
@@ -56,9 +56,9 @@ const LandingPageHero = () => {
                >
                   <img
                      src="/images/hero-bg.png"
-                     className="z-20   h-full w-full lg:object-contain xxl:object-cover   "
+                     className="z-20   h-full w-full sm:object-contain xxl:object-cover   "
                   />
-                  <div className="absolute  left-[20%]   top-[70%] z-50 flex items-center gap-4 rounded-md bg-white  px-4 py-2  shadow-1 md:relative md:shadow-2 lg:left-[-1%] lg:top-[-20%] xxl:left-[-8%] xxl:top-[-6%]">
+                  <div className="absolute  left-[20%]   top-[70%] z-50 flex items-center gap-4 rounded-md bg-white  px-4 py-2  shadow-1 md:relative md:left-[4%] md:top-[-30%] md:shadow-2 lg:left-[-1%] lg:top-[-20%] xxl:left-[-8%] xxl:top-[-6%]">
                      <h4 className="text-[0.7rem] font-[600] leading-[2.25rem] tracking-[0.02875rem] lg:text-[0.9rem] xxl:text-[1.2rem]  ">
                         Your funds has been successfully transferred
                      </h4>

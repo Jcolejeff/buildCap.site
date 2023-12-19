@@ -121,18 +121,18 @@ const GetStartedForm = () => {
    ];
 
    return (
-      <div className=" flex flex-col md:flex-row justify-center  items-center my-8   gap-[2rem]">
-         <section className="md:w-1/2 flex flex-col items-center gap-6 ">
+      <div className=" my-8 flex flex-col items-center  justify-center gap-[2rem]   md:flex-row">
+         <section className="flex flex-col items-center gap-6 md:w-1/2 ">
             <div>
-               <h3 className="font-[600] text-secondary-2 text-center text-[1.7rem] md:text-[2rem] leading-[130%] md:leading-[3rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[60rem] mb-4 ">
+               <h3 className="mb-4 max-w-[60rem] text-center text-[1.1rem] font-[600] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:text-[1.6rem] md:leading-[2rem] md:tracking-[0.0225rem] ">
                   <TextFormat
                      text={`Ready to Transform Your Construction Projects?`}
-                     keyword={"building"}
+                     keyword={"Construction"}
                      keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                   />
                </h3>
 
-               <h4 className="font-[500] text-center text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[2.2rem] md:leading-[2rem] max-w-[38.875rem]  xxl:max-w-[45.875rem]">
+               <h4 className="max-w-[38.875rem] text-center text-[0.8rem] font-[500] leading-[2.2rem] text-secondary-2 md:text-[1rem] md:leading-[2rem] xxl:max-w-[45.875rem]  xxl:text-[1.3rem]">
                   Join buildCap Today!
                </h4>
             </div>
@@ -140,7 +140,7 @@ const GetStartedForm = () => {
             <Form {...form}>
                <form
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="w-full flex flex-col gap-4"
+                  className="flex w-full flex-col gap-4"
                   ref={formRef}
                >
                   <FormField
@@ -151,17 +151,17 @@ const GetStartedForm = () => {
                            <div className="relative">
                               <FormControl>
                                  <Input
-                                    className="py-7 text-lg focus-within:placeholder:text-secondary-2 placeholder:text-gray-300 placeholder:text-lg  focus:bg-[#DBF1FF]  transition-all duration-300 ease-in-out "
+                                    className="py-7 text-lg transition-all duration-300 ease-in-out  placeholder:text-lg  placeholder:text-gray-300 focus-within:placeholder:text-secondary-2 focus:bg-[#DBF1FF] "
                                     placeholder="Name"
                                     {...field}
                                  />
                               </FormControl>
                            </div>
-                           <FormMessage className="text-base mt-1" />
+                           <FormMessage className="mt-1 text-base" />
                         </FormItem>
                      )}
                   />
-                  <section className="  grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-6 ">
+                  <section className="  grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr] ">
                      <FormField
                         control={form.control}
                         name="user_email"
@@ -170,13 +170,13 @@ const GetStartedForm = () => {
                               <div className="relative">
                                  <FormControl>
                                     <Input
-                                       className="py-7 bg-white text-lg placeholder:text-gray-400 placeholder:text-lg    transition-all duration-200 ease-in-out"
+                                       className="bg-white py-7 text-lg transition-all duration-200    ease-in-out placeholder:text-lg placeholder:text-gray-400"
                                        {...field}
                                        placeholder="Enter your email "
                                     />
                                  </FormControl>
                               </div>
-                              <FormMessage className="text-base mt-1" />
+                              <FormMessage className="mt-1 text-base" />
                            </FormItem>
                         )}
                      />
@@ -193,7 +193,7 @@ const GetStartedForm = () => {
                                     {...field}
                                  >
                                     <FormControl>
-                                       <SelectTrigger className="py-7 text-lg focus-within:text-secondary-2 text-gray-500 placeholder:text-lg  focus:bg-[#DBF1FF]  transition-all duration-300 ease-in-out ">
+                                       <SelectTrigger className="py-7 text-lg text-gray-500 transition-all duration-300  ease-in-out  placeholder:text-lg focus-within:text-secondary-2 focus:bg-[#DBF1FF] ">
                                           <SelectValue placeholder="Business Type" className="  " />
                                        </SelectTrigger>
                                     </FormControl>
@@ -210,7 +210,7 @@ const GetStartedForm = () => {
                                     </SelectContent>
                                  </Select>
                               </div>
-                              <FormMessage className="text-base mt-1" />
+                              <FormMessage className="mt-1 text-base" />
                            </FormItem>
                         )}
                      />
@@ -222,7 +222,7 @@ const GetStartedForm = () => {
                         <FormItem>
                            <FormControl>
                               <Input
-                                 className=" bg-white hidden text-lg placeholder:text-gray-400 placeholder:text-lg    transition-all duration-200 ease-in-out"
+                                 className=" hidden bg-white text-lg transition-all duration-200    ease-in-out placeholder:text-lg placeholder:text-gray-400"
                                  {...field}
                                  placeholder="Enter your message "
                               />
@@ -237,9 +237,9 @@ const GetStartedForm = () => {
                      <button
                         disabled={formIsLoading}
                         type="submit"
-                        className="px-6 w-full py-4 bg-primary-1 rounded-[6px] flex items-center justify-center gap-2 group hover:opacity-90 transition-all duration-200 ease-in-out disabled:cursor-not-allowed disabled:opacity-50"
+                        className="group flex w-full items-center justify-center gap-2 rounded-[6px] bg-primary-1 px-6 py-4 transition-all duration-200 ease-in-out hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
                      >
-                        <span className="text-white font-[500] leading-[1.5rem] tracking-[0.02875rem] disabled:cursor-not-allowed disabled:opacity-50">
+                        <span className="font-[500] leading-[1.5rem] tracking-[0.02875rem] text-white disabled:cursor-not-allowed disabled:opacity-50">
                            {formIsLoading ? <Spinner /> : "Sign Up Now"}
                         </span>
                      </button>
@@ -247,7 +247,7 @@ const GetStartedForm = () => {
                      <span
                         className={`${
                            message.isError ? "text-red-500" : "text-green-700"
-                        } text-[16px] text-center transition-opacity duration-200 ease-in-out`}
+                        } text-center text-[16px] transition-opacity duration-200 ease-in-out`}
                      >
                         {message.text}
                      </span>
@@ -261,10 +261,10 @@ const GetStartedForm = () => {
                Or Contact Us
             </a> */}
          </section>
-         <div className=" hidden md:block rounded-md transition-all duration-300 ease-in-out  w-1/2  bg-center bg-cover   filter hover:cursor-pointer">
+         <div className=" hidden w-1/2 rounded-md bg-cover bg-center filter  transition-all  duration-300 ease-in-out   hover:cursor-pointer md:block">
             <img
                src={url("/images/modal.jpg")}
-               className="w-full object-cover  md:h-[350px] rounded-md"
+               className="w-full rounded-md  object-cover md:h-[350px]"
                alt=""
             />
          </div>
