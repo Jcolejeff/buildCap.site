@@ -3,16 +3,16 @@ import Layout from "../../layouts/Layout.astro";
 import TextFormat from "lib/helpers/TextFormat";
 ---
 
-<Layout title="The buildCap: Get the Best">
+<Layout title="The buildCAP: Get the Best">
    <section
-      class="w-full md:py-[4.5rem] md:pt-[2.5rem] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1700px] mt-36 md:mt-24"
+      class="container relative mt-36 w-full max-w-[1700px] overflow-x-hidden px-container-base md:mt-24 md:py-[4.5rem] md:pt-[2.5rem] lg:px-container-lg xl:px-container-xl"
    >
       <div
-         class="w-full flex flex-col md:grid md:grid-cols-[1fr_1fr] gap-[1.5rem] md:gap-[2.75rem] relative"
+         class="relative flex w-full flex-col gap-[1.5rem] md:grid md:grid-cols-[1fr_1fr] md:gap-[2.75rem]"
       >
-         <div class="flex-grow gap-6 flex justify-center 2xl:gap-8 flex-col">
+         <div class="flex flex-grow flex-col justify-center gap-6 2xl:gap-8">
             <h1
-               class="font-[600] text-secondary-2 text-left text-[2rem] md:text-[4.4rem] leading-[130%] md:leading-[5rem] tracking-[0.02rem] md:tracking-[0.0225rem] transition-all duration-500 ease-in-out max-w-[40rem] lg:ml-[-0.2rem]"
+               class="max-w-[40rem] text-left text-[2rem] font-[600] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:text-[4.4rem] md:leading-[5rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem]"
             >
                <TextFormat
                   text={"Privacy Policy"}
@@ -21,43 +21,43 @@ import TextFormat from "lib/helpers/TextFormat";
                />
             </h1>
             <h2
-               class="font-[500] text-left text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[1.8rem] max-w-[38.875rem] xxl:max-w-[45.875rem]"
+               class="max-w-[38.875rem] text-left text-[1.18rem] font-[500] leading-[1.8rem] text-secondary-2 md:text-[1.3rem] xxl:max-w-[45.875rem] xxl:text-[1.3rem]"
             >
             </h2>
             <h2
-               class="font-[500] text-left text-secondary-2 text-[1.18rem] md:text-[1.3rem] xxl:text-[1.3rem] leading-[1.8rem] max-w-[38.875rem] xxl:max-w-[45.875rem]"
+               class="max-w-[38.875rem] text-left text-[1.18rem] font-[500] leading-[1.8rem] text-secondary-2 md:text-[1.3rem] xxl:max-w-[45.875rem] xxl:text-[1.3rem]"
             >
                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio laudantium
                laboriosam dicta unde veritatis odio, repellendus qui. Magnam, fugit dolores!
             </h2>
 
             <div
-               class="flex items-center gap-4 transition-all duration-500 ease-in-out mb-5 md:mb-0 md:ml-[-6px]"
+               class="mb-5 flex items-center gap-4 transition-all duration-500 ease-in-out md:mb-0 md:ml-[-6px]"
             >
                <a href="/" class="">
                   <div
-                     class="flex items-center gap-2 justify-center bg-primary-1 py-2 px-4 pr-6 rounded-lg"
+                     class="flex items-center justify-center gap-2 rounded-lg bg-primary-1 px-4 py-2 pr-6"
                   >
-                     <img src="/svgs/playWhite.svg" class="w-[1.5rem] h-[1.5rem]" />
+                     <img src="/svgs/playWhite.svg" class="h-[1.5rem] w-[1.5rem]" />
 
                      <div>
-                        <p class="text-white text-sm font-light tracking-wider">Get it on</p>
-                        <p class="text-white text-base font-semibold tracking-wider">Google Play</p>
+                        <p class="text-sm font-light tracking-wider text-white">Get it on</p>
+                        <p class="text-base font-semibold tracking-wider text-white">Google Play</p>
                      </div>
                   </div>
                </a>
                <a href="/" class="">
                   <div
-                     class="flex items-center gap-2 justify-center bg-primary-1 py-2 px-4 pr-6 rounded-lg"
+                     class="flex items-center justify-center gap-2 rounded-lg bg-primary-1 px-4 py-2 pr-6"
                   >
                      <img
                         src="/svgs/iosWhite.svg"
-                        class="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem]"
+                        class="h-[1.5rem] w-[1.5rem] lg:h-[2rem] lg:w-[2rem]"
                      />
 
                      <div>
-                        <p class="text-white text-sm font-light tracking-wider">Get it on</p>
-                        <p class="text-white text-base font-semibold tracking-wider">App Store</p>
+                        <p class="text-sm font-light tracking-wider text-white">Get it on</p>
+                        <p class="text-base font-semibold tracking-wider text-white">App Store</p>
                      </div>
                   </div>
                </a>
@@ -66,7 +66,7 @@ import TextFormat from "lib/helpers/TextFormat";
 
          <section>
             <div
-               class="flex flex-col rounded-lg items-end justify-between w-full h-full min-h-[25.375rem] max-h-[45rem] lg:min-h-[30.375rem] 2xl:min-h-[40.375rem] relative"
+               class="relative flex h-full max-h-[45rem] min-h-[25.375rem] w-full flex-col items-end justify-between rounded-lg lg:min-h-[30.375rem] 2xl:min-h-[40.375rem]"
                style={{
                   background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('/images/terms/privacy.png')`,
                   backgroundSize: "cover",
@@ -77,9 +77,9 @@ import TextFormat from "lib/helpers/TextFormat";
          </section>
       </div>
 
-      <section class="w-full pt-[7.5rem] flex flex-col gap-8">
-         <h2 class="font-bold text-3xl md:text-6xl">Application of this Privacy Policy</h2>
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+      <section class="flex w-full flex-col gap-8 pt-[7.5rem]">
+         <h2 class="text-3xl font-bold md:text-6xl">Application of this Privacy Policy</h2>
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse porro odit saepe qui
             rerum. Praesentium cumque, officia architecto in est doloribus quod nisi fugiat
             repellendus molestiae iste, laborum eius placeat maiores dicta eum suscipit nam esse.
@@ -95,32 +95,32 @@ import TextFormat from "lib/helpers/TextFormat";
             Provident esse nemo repellendus rerum voluptatibus ducimus in velit, aperiam officia.
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             “You” and “your” mean the person who uses or accesses the Services.
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa!
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             "Business Day” means weekdays excluding Saturdays and Sundays and all other days
             officially declared work-free days/public holidays in Nigeria.
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iure adipisci eveniet
             esse. Adipisci ab doloremque neque sunt, natus odit eos quae ratione consectetur
             exercitationem, hic possimus magnam animi recusandae alias minus distinctio modi
             laboriosam consequuntur nam, quo maxime ullam!
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem perferendis perspiciatis
             quam error asperiores officiis molestias exercitationem omnis illo fugit.
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis, laudantium
             ducimus fugiat quo nulla iste laboriosam beatae exercitationem molestias, fugit ipsum id
             quas quaerat. Soluta nam molestiae inventore unde modi esse saepe in nostrum, expedita
@@ -128,10 +128,10 @@ import TextFormat from "lib/helpers/TextFormat";
             necessitatibus blanditiis tempora odio dignissimos tenetur consectetur. Doloribus, vel
             error.
          </p>
-         <h2 class="font-bold text-3xl md:text-6xl">
+         <h2 class="text-3xl font-bold md:text-6xl">
             Information We Collect and How We Collect It
          </h2>
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque molestiae dicta, pariatur
             voluptate possimus fuga quia eaque at iure nemo dignissimos in dolores consectetur
             consequatur? Libero ex vero adipisci magnam sed nulla aliquid molestias molestiae
@@ -140,7 +140,7 @@ import TextFormat from "lib/helpers/TextFormat";
             facilis in amet!
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga, maiores sit
             vitae placeat quibusdam ducimus aliquam porro molestiae quo id, at pariatur sequi minus
             quaerat voluptate amet deleniti impedit voluptates quam! Temporibus nemo ab ratione
@@ -148,7 +148,7 @@ import TextFormat from "lib/helpers/TextFormat";
             praesentium cupiditate enim cumque eaque vero voluptas quas. Nihil itaque saepe quaerat.
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum officiis quaerat
             possimus? A possimus expedita commodi unde? Eum, quibusdam sint similique dolorum quidem
             quasi cum aliquid sed iusto dolores, error in consequatur tempora dicta fugiat quam,
@@ -160,7 +160,7 @@ import TextFormat from "lib/helpers/TextFormat";
             saepe maxime velit? Voluptatem est quo voluptates soluta praesentium!
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolor obcaecati eum
             exercitationem officia minus eos, sed, quidem dignissimos accusamus omnis possimus
             dolorum. Recusandae officia nesciunt, illo blanditiis temporibus aperiam. Impedit
@@ -173,7 +173,7 @@ import TextFormat from "lib/helpers/TextFormat";
             aspernatur repellendus amet distinctio?
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam beatae
             consectetur autem earum! Rerum, nulla quibusdam aut, voluptatibus nisi inventore enim
             ipsa facere, eos perspiciatis possimus dolor perferendis. Non modi quod eum, nam totam
@@ -203,7 +203,7 @@ import TextFormat from "lib/helpers/TextFormat";
             aliquid totam odit iure similique soluta deserunt fugiat, quae tempore? Fuga.
          </p>
 
-         <p class="tracking-[0.0225rem] leading-[2.4rem] text-[1.18rem] text-gray-500">
+         <p class="text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem] text-gray-500">
             The information you provide us is subject to our Privacy Policy.
          </p>
       </section>

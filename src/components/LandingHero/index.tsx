@@ -18,7 +18,7 @@ const LandingPageHero = () => {
                   <h1 className="max-w-[80rem] text-center text-[2rem]    font-[700] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[4rem] xxl:leading-[4rem]">
                      <TextFormat
                         text={`Financial solutions built for`}
-                        keyword={"The buildCap"}
+                        keyword={"The buildCAP"}
                         keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                      />
                   </h1>
@@ -27,12 +27,12 @@ const LandingPageHero = () => {
 
                <Fade bottom>
                   <h2 className="max-w-[38.875rem] text-center text-[1.18rem] font-[500] leading-[2.2rem] text-secondary-2 md:leading-[2.01rem] lg:text-[1rem] xxl:max-w-[45.875rem] xxl:text-[1.5rem]">
-                     Revolutionizing Construction Financing in Africa
+                     Revolutionizing Construction Financing in Africa.
                   </h2>
                </Fade>
 
                <div className="mb-5 flex   items-center gap-4 transition-all duration-500 ease-in-out">
-                  <a href="h" className="">
+                  <a href="#contact" className="">
                      <div className="flex items-center justify-center rounded-lg bg-primary-1 px-4 py-3  xxl:px-4 xxl:py-4">
                         <p className="text-sm  font-bold tracking-wider text-white lg:text-[0.9rem] xxl:text-[1.1rem]">
                            Get Started
@@ -60,7 +60,7 @@ const LandingPageHero = () => {
                   />
                   <div className="absolute  left-[20%]   top-[70%] z-50 flex items-center gap-4 rounded-md bg-white  px-4 py-2  shadow-1 md:relative md:left-[4%] md:top-[-30%] md:shadow-2 lg:left-[-1%] lg:top-[-20%] xxl:left-[-8%] xxl:top-[-6%]">
                      <h4 className="text-[0.7rem] font-[600] leading-[2.25rem] tracking-[0.02875rem] lg:text-[0.9rem] xxl:text-[1.2rem]  ">
-                        Your funds has been successfully transferred
+                        Your funds has been successfully transferred.
                      </h4>
 
                      <img src={url("/images/products/Success.svg")} alt="" className="" />

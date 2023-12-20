@@ -73,20 +73,20 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
          <NavigationMenu>
             <NavigationMenuList>
                <NavigationMenuItem>
-                  <span className=" lg:text-[1.15rem] block px-4   font-[400] leading-[1.5rem] tracking-[0.005rem] cursor-pointer">
-                     <a href={url("/")}>About</a>
+                  <span className=" block cursor-pointer px-4   font-[400] leading-[1.5rem] tracking-[0.005rem] lg:text-[1.15rem]">
+                     <a href={url("/about-us")}>About</a>
                   </span>
                </NavigationMenuItem>
                <NavigationMenuItem>
                   <span
-                     className={` lg:text-[1.15rem] block px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] cursor-pointer `}
+                     className={` block cursor-pointer px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] lg:text-[1.15rem] `}
                   >
                      <a href={url("/#features")}>Features</a>
                   </span>
                </NavigationMenuItem>
                <NavigationMenuItem>
                   <span
-                     className={` lg:text-[1.15rem] block px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] cursor-pointer `}
+                     className={` block cursor-pointer px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] lg:text-[1.15rem] `}
                   >
                      <a href={url("/terms")}>Terms </a>
                   </span>
@@ -94,7 +94,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
 
                <NavigationMenuItem>
                   <span
-                     className={`  lg:text-[1.15rem] block px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] cursor-pointer `}
+                     className={`  block cursor-pointer px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] lg:text-[1.15rem] `}
                   >
                      <a href={url("/contact-us")}>Contact Us</a>
                   </span>

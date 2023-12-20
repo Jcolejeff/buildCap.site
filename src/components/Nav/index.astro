@@ -15,32 +15,34 @@ let { darkNavBg } = Astro.props;
 ---
 
 <nav
-   class="container max-w-[1700px] px-container-base lg:px-container-lg xl:px-container-xl bg-transparent"
+   class="container max-w-[1700px] bg-transparent px-container-base lg:px-container-lg xl:px-container-xl"
 >
    <div
-      class="w-full flex items-center justify-between lg:border-b-secondary-1 py-[1.2rem] md:pb-[1rem] md:pt-[1.5rem] xxl:py-8"
+      class="flex w-full items-center justify-between py-[1.2rem] md:pb-[1rem] md:pt-[1.5rem] lg:border-b-secondary-1 xxl:py-8"
    >
-      <div class="flex items-center gap-[2.5rem] w-full">
+      <div class="flex w-full items-center gap-[2.5rem]">
          <a href="/" class="flex items-center gap-4">
             <img src={url("/images/logoBlue.svg")} alt="" class="w-8 md:w-12" />
-            <p class="font-bold text-sm md:text-2xl text-primary-1">buildCap</p>
+            <p class="text-sm font-bold text-primary-1 md:text-2xl">buildCAP</p>
          </a>
-         <div class="hidden lg:flex items-center gap-[0.5rem]">
+         <div class="hidden items-center gap-[0.5rem] lg:flex">
             <NavDrop darkNavBg={darkNavBg} client:load />
          </div>
       </div>
 
       <div
-         class="flex invisible md:visible items-center justify-end md:w-1/2 gap-4 transition-all duration-500 ease-in-out md:mb-0 ml-[-6px]"
+         class="invisible ml-[-6px] flex items-center justify-end gap-4 transition-all duration-500 ease-in-out md:visible md:mb-0 md:w-1/2"
       >
          <a href="#" class="">
-            <div class="flex items-center justify-center md:py-2 md:px-4 md:pr-6 rounded-lg">
+            <div
+               class="invisible flex items-center justify-center rounded-lg md:px-4 md:py-2 md:pr-6"
+            >
                <p class="text-[1.1rem] font-light tracking-wider">Sign In</p>
             </div>
          </a>
-         <a href="#" class="">
-            <div class="flex items-center justify-center bg-primary-1 md:py-4 md:px-4 rounded-lg">
-               <p class="text-white text-sm md:text-[1.1rem] font-bold tracking-wider">
+         <a href="#contact" class="">
+            <div class="flex items-center justify-center rounded-lg bg-primary-1 md:px-4 md:py-4">
+               <p class="text-sm font-bold tracking-wider text-white md:text-[1.1rem]">
                   Get Started
                </p>
             </div>

@@ -61,7 +61,7 @@ const ReviewSlide = () => {
    const reviews = [
       {
          img: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-         text: ` “buildCap app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances."`,
+         text: ` “buildCAP app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances."`,
          date: "15 may 2023",
       },
       {
@@ -72,7 +72,7 @@ const ReviewSlide = () => {
       {
          img: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
 
-         text: `buildCap app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances.`,
+         text: `buildCAP app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances.`,
          date: " 10 February 2023",
       },
    ];
@@ -95,19 +95,19 @@ const ReviewSlide = () => {
                {reviews.map((item, index) => {
                   return (
                      <article
-                        className="h-full border bg-white shadow-lg xl:mx-16 px-8 py-24 rounded-[2rem] "
+                        className="h-full rounded-[2rem] border bg-white px-8 py-24 shadow-lg xl:mx-16 "
                         key={index}
                      >
                         <div className="space-y-2">
                            <div className="flex justify-between">
                               <div className="flex gap-2">
-                                 <StarIcon className="text-orange-400/80 fill-current w-4" />
-                                 <StarIcon className="text-orange-400/80 fill-current w-4" />
-                                 <StarIcon className="text-orange-400/80 fill-current w-4" />
-                                 <StarIcon className="text-orange-400/80 fill-current w-4" />
-                                 <StarIcon className="text-orange-400/80 fill-current w-4" />
+                                 <StarIcon className="w-4 fill-current text-orange-400/80" />
+                                 <StarIcon className="w-4 fill-current text-orange-400/80" />
+                                 <StarIcon className="w-4 fill-current text-orange-400/80" />
+                                 <StarIcon className="w-4 fill-current text-orange-400/80" />
+                                 <StarIcon className="w-4 fill-current text-orange-400/80" />
                               </div>
-                              <img src={item.img} alt="" className="w-10 h-10 rounded-full" />
+                              <img src={item.img} alt="" className="h-10 w-10 rounded-full" />
                            </div>
                            <div>
                               <p className="text-base font-semibold ">{item.text}</p>
@@ -120,16 +120,16 @@ const ReviewSlide = () => {
                   );
                })}
             </Slide>
-            <div className="flex justify-center items-center my-4 lg:my-14 gap-6">
+            <div className="my-4 flex items-center justify-center gap-6 lg:my-14">
                <button
-                  className=" border border-white p-2 lg:p-3  rounded-full hover:shadow-sm hover:scale-110 transition-all ease-in-out duration-300"
+                  className=" rounded-full border border-white p-2  transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-sm lg:p-3"
                   type="button"
                   onClick={() => slideRef?.current?.goBack()}
                >
                   <img src={url("/images/left-arrow.png")} alt="" />
                </button>
                <button
-                  className=" border border-white p-2 lg:p-3  rounded-full hover:shadow-sm hover:scale-110 transition-all ease-in-out duration-300"
+                  className=" rounded-full border border-white p-2  transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-sm lg:p-3"
                   type="button"
                   onClick={() => slideRef?.current?.goNext()}
                >

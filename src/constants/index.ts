@@ -58,7 +58,7 @@ const experiences = [
       ],
    },
    {
-      title: "Empower Your Business Planning on Your Terms with buildCap in Your Arsenal",
+      title: "Empower Your Business Planning on Your Terms with buildCAP in Your Arsenal",
       company_name: "Street Bazaar",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",

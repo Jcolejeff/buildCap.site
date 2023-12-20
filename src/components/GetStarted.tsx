@@ -121,8 +121,8 @@ const GetStartedForm = () => {
    ];
 
    return (
-      <div className=" my-8 flex flex-col items-center  justify-center gap-[2rem]   md:flex-row">
-         <section className="flex flex-col items-center gap-6 md:w-1/2 ">
+      <div className=" my-8 flex flex-col-reverse items-center  justify-center gap-[2rem]   md:flex-row">
+         <section className="flex w-full flex-col items-center gap-6  md:w-1/2 ">
             <div>
                <h3 className="mb-4 max-w-[60rem] text-center text-[1.1rem] font-[600] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:text-[1.6rem] md:leading-[2rem] md:tracking-[0.0225rem] ">
                   <TextFormat
@@ -133,7 +133,7 @@ const GetStartedForm = () => {
                </h3>
 
                <h4 className="max-w-[38.875rem] text-center text-[0.8rem] font-[500] leading-[2.2rem] text-secondary-2 md:text-[1rem] md:leading-[2rem] xxl:max-w-[45.875rem]  xxl:text-[1.3rem]">
-                  Join buildCap Today!
+                  Join buildCAP Today!
                </h4>
             </div>
 
@@ -261,7 +261,7 @@ const GetStartedForm = () => {
                Or Contact Us
             </a> */}
          </section>
-         <div className=" hidden w-1/2 rounded-md bg-cover bg-center filter  transition-all  duration-300 ease-in-out   hover:cursor-pointer md:block">
+         <div className=" rounded-md bg-cover bg-center filter transition-all  duration-300  ease-in-out hover:cursor-pointer   md:w-1/2">
             <img
                src={url("/images/modal.jpg")}
                className="w-full rounded-md  object-cover md:h-[350px]"

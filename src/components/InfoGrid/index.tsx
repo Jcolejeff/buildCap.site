@@ -11,7 +11,7 @@ const InfoGrid = () => {
          image: "/images/receipts/iconOne.svg",
          heading: "Connect with Main Contractors",
          paragraph:
-            "Start by linking with your main contractor on buildCap and get your project rolling!.",
+            "Start by linking with your main contractor on buildCAP and get your project rolling!.",
       },
       {
          image: "/images/receipts/iconTwo.svg",
@@ -60,7 +60,7 @@ const InfoGrid = () => {
          </section>
          <div className="mt-12 hidden items-center  gap-4 md:flex">
             <a
-               href="#"
+               href="#contact"
                className={cn(
                   "hidden items-center  justify-center  rounded-md bg-primary-1 px-6 py-4 shadow-1 transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:flex md:w-fit lg:px-16 ",
                )}
@@ -70,7 +70,7 @@ const InfoGrid = () => {
                </span>
             </a>
             <a
-               href={url("request-demo")}
+               href="#contact"
                className={cn(
                   "hidden items-center  justify-center  rounded-md border border-primary-1 px-6 py-4  transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:flex md:w-fit lg:px-12 ",
                )}

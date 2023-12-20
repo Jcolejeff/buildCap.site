@@ -39,7 +39,7 @@ export const FooterLinksData = [
                soon: false,
             },
             {
-               title: "Advance Payment",
+               title: "Advance Pay",
                url: "#",
                soon: true,
             },
@@ -70,7 +70,7 @@ export const FooterLinksData = [
             //    url: "#faq",
             // },
             {
-               title: "Support@buildCap.com",
+               title: "Support@buildCAP.com",
                url: "mailto:support@joi.com",
             },
          ],

@@ -7,33 +7,33 @@ interface IFooter {}
 
 const Footer = ({}: IFooter) => {
    return (
-      <div className="w-full bg-primary-20  flex flex-col  max-w-[1700px] container px-container-base lg:px-container-lg xl:px-container-xl overflow-x-hidden relative pt-[10rem]">
-         <div className="grid grid-cols-1 md:flex  md:justify-between  gap-[4rem] md:gap-[5.57rem] pb-12 md:pb-[8.29rem] border-b border-b-secondary-8/40">
-            <div className="  gap-8  flex  flex-col  ">
+      <div className="container relative  flex w-full  max-w-[1700px] flex-col overflow-x-hidden bg-primary-20 px-container-base pt-[10rem] lg:px-container-lg xl:px-container-xl">
+         <div className="grid grid-cols-1 gap-[4rem]  border-b  border-b-secondary-8/40 pb-12 md:flex md:justify-between md:gap-[5.57rem] md:pb-[8.29rem]">
+            <div className="  flex  flex-col  gap-8  ">
                <div className="">
                   <a href="/" className="flex items-center gap-4">
                      <img src={url("/images/logoBlue.svg")} alt="" className="w-12" />
-                     <p className="font-bold text-2xl text-primary-1">buildCap</p>
+                     <p className="text-2xl font-bold text-primary-1">buildCAP</p>
                   </a>
                </div>
             </div>
             {FooterLinksData?.map((i, idx) => (
                <div key={idx}>
-                  <h6 className="font-[700] text-[19px] text-xl  leading-[2rem] tracking-[-0.0125rem] mb-[1.25rem]">
+                  <h6 className="mb-[1.25rem] text-[19px] text-xl  font-[700] leading-[2rem] tracking-[-0.0125rem]">
                      {capitalizeFirstLetter(i?.data?.category)}
                   </h6>
-                  <p className="text-secondary-8 text-[14px]  tracking-[0.00625rem] mb-4">
+                  <p className="mb-4 text-[14px]  tracking-[0.00625rem] text-secondary-8">
                      {i?.body}
                   </p>
                   <ul className="flex flex-col gap-[0.83rem] ">
                      {i?.data?.links?.map((i: any, idx: any) => (
                         <li
                            key={idx}
-                           className="flex items-center hover:text-secondary-3 transition-colors duration-300 ease-in-out cursor-pointer text-[17px]  tracking-[0.00625rem]"
+                           className="flex cursor-pointer items-center text-[17px] tracking-[0.00625rem] transition-colors duration-300 ease-in-out  hover:text-secondary-3"
                         >
                            <a href={i?.url}>{i?.title} </a>
                            {i?.soon && (
-                              <span className="capitalize bg-green-500 whitespace-nowrap text-white rounded-full px-2 py-1 text-[8px] ml-2 ">
+                              <span className="ml-2 whitespace-nowrap rounded-full bg-green-500 px-2 py-1 text-[8px] capitalize text-white ">
                                  coming soon
                               </span>
                            )}
@@ -43,9 +43,9 @@ const Footer = ({}: IFooter) => {
                </div>
             ))}
          </div>
-         <div className=" py-6 pt-9 gap-8 md:gap-0 flex flex-col-reverse md:flex-row justify-between">
+         <div className=" flex flex-col-reverse justify-between gap-8 py-6 pt-9 md:flex-row md:gap-0">
             <p className="  font-semibold leading-[2rem] tracking-[0.00625rem]">
-               Copyright © {new Date().getFullYear()} buildCap Technology Limited All Rights
+               Copyright © {new Date().getFullYear()} buildCAP Technology Limited All Rights
                Reserved
             </p>
             <div className="flex w-1/2   gap-8">

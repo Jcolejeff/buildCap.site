@@ -10,23 +10,23 @@ import { SectionWrapper } from "../../hoc";
 const Features = () => {
    const sections = [
       {
-         heading: "Hassle-Free Financing",
+         heading: "Hassle-free Material Financing",
          paragraph: "Quick and easy access to funds for your construction materials.",
          img: " /images/landing-page/scale.svg",
       },
       {
+         heading: "Grow Your Business",
+         paragraph: "Take on more projects with reliable financial support.",
+         img: " /images/landing-page/scale.svg",
+      },
+      {
          heading: "B2B Payments Made Easy",
-         paragraph: "Pay your suppliers directly with buildCap.",
+         paragraph: "Pay your suppliers directly with buildCAP, no intermediaries.",
          img: " /images/landing-page/scale.svg",
       },
       {
          heading: "Secure Transactions",
-         paragraph: "Safe and direct payments to suppliers.",
-         img: " /images/landing-page/scale.svg",
-      },
-      {
-         heading: "Boost Your Business",
-         paragraph: "Take on more projects with reliable financial support.",
+         paragraph: "Safe and direct payments to suppliers, with no interference.",
          img: " /images/landing-page/scale.svg",
       },
    ];
@@ -39,8 +39,8 @@ const Features = () => {
             <div className="flex flex-col items-center justify-center gap-6 2xl:gap-8">
                <h1 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[3rem]">
                   <TextFormat
-                     text={`Why Choose buildCap `}
-                     keyword={"buildCap"}
+                     text={`Why Choose buildCAP `}
+                     keyword={"buildCAP"}
                      keywordClassName=" 
                      text-secondary-1 transition-all duration-500 ease-in-out"
                   />
@@ -79,20 +79,22 @@ const Features = () => {
                               scale: 1,
                               speed: 450,
                            }}
-                           className="bg-tertiary w-full rounded-2xl border border-white/90 px-2  xxl:p-5"
+                           className="bg-tertiary w-full rounded-2xl border border-white/90 px-2 py-12 md:h-[15rem] md:px-4 md:py-8 lg:h-[15rem] lg:px-6 lg:py-12 xl:h-full xxl:p-5 xxl:py-8"
                         >
                            <article
                               onClick={() => {
                                  setActive(item);
                               }}
                               className={cn(
-                                 `cursor-pointer rounded-lg px-2  py-12 transition-all duration-500 ease-in-out  xxl:px-5 ${
+                                 `cursor-pointer rounded-lg  transition-all duration-500 ease-in-out  ${
                                     item.heading === active.heading && "opacity-100"
                                  }`,
                               )}
                            >
                               <div className="flex flex-col gap-4  px-2">
-                                 <h3 className=" font-semibold md:text-base">{item.heading}</h3>
+                                 <h3 className="font-[700] text-secondary-1 md:text-base lg:text-lg xxl:text-xl">
+                                    {item.heading}
+                                 </h3>
                                  <p className="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
                                     {item.paragraph}
                                  </p>

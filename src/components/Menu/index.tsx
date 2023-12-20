@@ -14,21 +14,21 @@ const Menu = () => {
    const ServicesData = [
       { title: "Home", link: "/" },
       { title: "Hire", link: "/hire" },
-      { title: "Join The buildCap", link: "/join" },
+      { title: "Join The buildCAP", link: "/join" },
    ];
    const CompanyData = [
       // { title: "About Us", link: "/about-us" },
       { title: "Contact Us", link: "/contact-us" },
-      { title: "Terms of Service", link: "/Terms-of-use-The-buildCap.pdf" },
-      { title: "Privacy Policy", link: "/Privacy-Policy-buildCap.pdf" },
+      { title: "Terms of Service", link: "/Terms-of-use-The-buildCAP.pdf" },
+      { title: "Privacy Policy", link: "/Privacy-Policy-buildCAP.pdf" },
    ];
 
    return (
       <>
          <div
             onClick={() => setMenuOpen(true)}
-            className="grid place-items-center relative z-[100] rounded-[3.5rem] w-[3rem] h-[3rem] border border-[#E8E7EA] cursor-pointer
-   bg-slate-100 active:bg-transparent transition-colors ease-in-out duration-300
+            className="relative z-[100] grid h-[3rem] w-[3rem] cursor-pointer place-items-center rounded-[3.5rem] border border-[#E8E7EA]
+   bg-slate-100 transition-colors duration-300 ease-in-out active:bg-transparent
       "
          >
             {/* <img src={url(menuIcon?.src)} alt="" /> */}
@@ -36,14 +36,14 @@ const Menu = () => {
          </div>
          {createPortal(
             <div
-               className={`fixed h-full z-[100] ${
+               className={`fixed z-[100] h-full ${
                   menuOpen ? `translate-x-0` : `!-translate-x-full`
-               } transition-transform duration-300 ease-in-out  w-[100vw] overflow-auto top-0 bottom-0 right-0 left-0 bg-white z-10 flex flex-col px-container-base`}
+               } bottom-0 left-0 right-0  top-0 z-10 flex w-[100vw] flex-col overflow-auto bg-white px-container-base transition-transform duration-300 ease-in-out`}
             >
-               <div className="w-full flex items-center justify-between border-b border-b-gray-300 lg:border-b-secondary-1 pb-[0.75rem] md:pb-[1rem] pt-[1.5rem]">
+               <div className="flex w-full items-center justify-between border-b border-b-gray-300 pb-[0.75rem] pt-[1.5rem] md:pb-[1rem] lg:border-b-secondary-1">
                   <a href="/" className="flex items-center gap-4">
                      <img src={url("/images/logoBlue.svg")} alt="" className="w-8 md:w-12" />
-                     <p className="font-bold text-sm md:text-2xl text-primary-1">buildCap</p>
+                     <p className="text-sm font-bold text-primary-1 md:text-2xl">buildCAP</p>
                   </a>
 
                   <svg
@@ -63,22 +63,22 @@ const Menu = () => {
                      <path d="m6 6 12 12" />
                   </svg>
                </div>
-               <div className="py-[2rem] flex flex-col gap-[1.5rem]">
+               <div className="flex flex-col gap-[1.5rem] py-[2rem]">
                   <div className="flex flex-col gap-[1rem]">
-                     <h4 className="text-secondary-2 font-[700]">Documentation</h4>
+                     <h4 className="font-[700] text-secondary-2">Documentation</h4>
                      {ServicesData.map((i, idx) => (
-                        <span key={idx} className="list-none group cursor-pointer">
-                           <span className="text-[15px] !text-secondary-5 group-hover:!text-secondary-2 font-[500] leading-[1.5rem] tracking-[0.005rem] cursor-pointer transition-colors duration-300 ease-in-out">
+                        <span key={idx} className="group cursor-pointer list-none">
+                           <span className="cursor-pointer text-[15px] font-[500] leading-[1.5rem] tracking-[0.005rem] !text-secondary-5 transition-colors duration-300 ease-in-out group-hover:!text-secondary-2">
                               <a href={url(`${i?.link}`)}>{i?.title}</a>
                            </span>
                         </span>
                      ))}
                   </div>
                   <div className="flex flex-col gap-[1rem]">
-                     <h4 className="text-secondary-2 font-[700]">Company </h4>
+                     <h4 className="font-[700] text-secondary-2">Company </h4>
                      {CompanyData.map((i, idx) => (
-                        <span key={idx} className="list-none group cursor-pointer">
-                           <span className="text-[15px] !text-secondary-5 group-hover:!text-secondary-2 font-[500] leading-[1.5rem] tracking-[0.005rem] cursor-pointer transition-colors duration-300 ease-in-out">
+                        <span key={idx} className="group cursor-pointer list-none">
+                           <span className="cursor-pointer text-[15px] font-[500] leading-[1.5rem] tracking-[0.005rem] !text-secondary-5 transition-colors duration-300 ease-in-out group-hover:!text-secondary-2">
                               <a href={url(`${i?.link}`)}>{i?.title}</a>
                            </span>
                         </span>
@@ -86,20 +86,20 @@ const Menu = () => {
                   </div>
                </div>
 
-               <div className="flex items-center justify-center  mt-14   gap-4 transition-all duration-500 ease-in-out mb-5 md:mb-0 md:ml-[-6px]">
+               <div className="mb-5 mt-14 flex  items-center   justify-center gap-4 transition-all duration-500 ease-in-out md:mb-0 md:ml-[-6px]">
                   <a href="#" className="">
-                     <div className="flex items-center  gap-2 justify-center bg-primary-1 py-2 px-4 pr-6 rounded-lg">
+                     <div className="flex items-center  justify-center gap-2 rounded-lg bg-primary-1 px-4 py-2 pr-6">
                         <div>
-                           <a className="text-white text-base font-semibold tracking-wider block px-6 py-2">
+                           <a className="block px-6 py-2 text-base font-semibold tracking-wider text-white">
                               Sign Up
                            </a>
                         </div>
                      </div>
                   </a>
                   <a href="#" className="">
-                     <div className="flex items-center gap-2 justify-center bg-primary-1  py-2 px-4 pr-6 rounded-lg">
+                     <div className="flex items-center justify-center gap-2 rounded-lg  bg-primary-1 px-4 py-2 pr-6">
                         <div>
-                           <a className="text-white text-base font-semibold tracking-wider block px-6 py-2">
+                           <a className="block px-6 py-2 text-base font-semibold tracking-wider text-white">
                               Login
                            </a>
                         </div>
