@@ -45,8 +45,7 @@ const Footer = ({}: IFooter) => {
          </div>
          <div className=" flex flex-col-reverse justify-between gap-8 py-6 pt-9 md:flex-row md:gap-0">
             <p className="  font-semibold leading-[2rem] tracking-[0.00625rem]">
-               Copyright © {new Date().getFullYear()} buildCAP Technology Limited All Rights
-               Reserved
+               Copyright © {new Date().getFullYear()} Buildcap technologies ltd All Rights Reserved
             </p>
             <div className="flex w-1/2   gap-8">
                <img src={url("/images/footer/fb.svg")} alt="" />
