@@ -17,10 +17,10 @@ const Menu = () => {
       { title: "Join The buildCAP", link: "/join" },
    ];
    const CompanyData = [
-      // { title: "About Us", link: "/about-us" },
+      { title: "About Us", link: "/about-us" },
       { title: "Contact Us", link: "/contact-us" },
-      { title: "Terms of Service", link: "/Terms-of-use-The-buildCAP.pdf" },
-      { title: "Privacy Policy", link: "/Privacy-Policy-buildCAP.pdf" },
+      { title: "Terms of Service", link: "/terms" },
+      { title: "Privacy Policy", link: "/privacy" },
    ];
 
    return (
@@ -64,7 +64,7 @@ const Menu = () => {
                   </svg>
                </div>
                <div className="flex flex-col gap-[1.5rem] py-[2rem]">
-                  <div className="flex flex-col gap-[1rem]">
+                  {/* <div className="flex flex-col gap-[1rem]">
                      <h4 className="font-[700] text-secondary-2">Documentation</h4>
                      {ServicesData.map((i, idx) => (
                         <span key={idx} className="group cursor-pointer list-none">
@@ -73,7 +73,7 @@ const Menu = () => {
                            </span>
                         </span>
                      ))}
-                  </div>
+                  </div> */}
                   <div className="flex flex-col gap-[1rem]">
                      <h4 className="font-[700] text-secondary-2">Company </h4>
                      {CompanyData.map((i, idx) => (
@@ -86,7 +86,7 @@ const Menu = () => {
                   </div>
                </div>
 
-               <div className="mb-5 mt-14 flex  items-center   justify-center gap-4 transition-all duration-500 ease-in-out md:mb-0 md:ml-[-6px]">
+               <div className="invisible mb-5 mt-14 flex  items-center   justify-center gap-4 transition-all duration-500 ease-in-out md:mb-0 md:ml-[-6px]">
                   <a href="#" className="">
                      <div className="flex items-center  justify-center gap-2 rounded-lg bg-primary-1 px-4 py-2 pr-6">
                         <div>
