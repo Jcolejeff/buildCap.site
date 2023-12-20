@@ -41,7 +41,7 @@ const Card = ({
               
             </div> */}
             <div className="mt-5">
-               <h3 className="text-[24px] font-bold text-white">{name}</h3>
+               <h3 className="text-[24px] font-bold text-secondary-1">{name}</h3>
                <p className="text-secondary text-[14px]">{description}</p>
             </div>
             <ul className="ml-5 mt-5 list-disc space-y-2">
@@ -70,7 +70,14 @@ const InfoAboutCompany = () => {
       <section className="flex flex-col gap-12 lg:flex-row ">
          <motion.div variants={textVariant(0.1)}>
             <div className="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
-               <p className=" mt-4 font-[16px] leading-[30px]">buildCAP PRODUCTS</p>
+               <p className=" mt-4  font-extrabold leading-[30px] md:text-lg">
+                  <TextFormat
+                     text={`buildCAP Products`}
+                     keyword={"buildCap"}
+                     keywordClassName=" 
+                     text-secondary-1 transition-all duration-500 ease-in-out"
+                  />
+               </p>
                <h5 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:leading-[3rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem]">
                   <TextFormat
                      text={`Free your business from the broken repayment chain`}

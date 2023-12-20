@@ -9,13 +9,13 @@ const InfoGrid = () => {
    const data = [
       {
          image: "/images/receipts/iconOne.svg",
-         heading: "Connect with Main Contractors",
+         heading: "Connect with Main Contractors on buildCAP",
          paragraph:
             "Start by linking with your main contractor on buildCAP and get your project rolling!.",
       },
       {
          image: "/images/receipts/iconTwo.svg",
-         heading: "Upload Your Project Details to our platform",
+         heading: "Upload your project details to the buildCAP platform",
          paragraph:
             "Easily upload your project agreement and material requirements for swift approval.",
       },

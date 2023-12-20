@@ -124,7 +124,7 @@ const projects = [
       description: "Avoid upfront costs for materials",
       tags: [
          {
-            name: "We purchase materials from your supplier in advance.",
+            name: "We pay your suppliers for your needed materials.",
             color: "blue-text-gradient",
          },
          {
@@ -135,10 +135,10 @@ const projects = [
             name: "Obtain greater negotiation power for discounts with suppliers.",
             color: "pink-text-gradient",
          },
-         {
-            name: "Enhance your ability to negotiate supplier discounts.",
-            color: "blue-text-gradient",
-         },
+         // {
+         //    name: "Enhance your ability to negotiate supplier discounts.",
+         //    color: "blue-text-gradient",
+         // },
       ],
       image: "/images/landing-page/zcomb.svg",
       source_code_link: "https://github.com/Iysah",
