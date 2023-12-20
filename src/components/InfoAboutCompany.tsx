@@ -73,7 +73,7 @@ const InfoAboutCompany = () => {
                <p className=" mt-4  font-extrabold leading-[30px] md:text-lg">
                   <TextFormat
                      text={`buildCAP Products`}
-                     keyword={"buildCap"}
+                     keyword={"buildCAP"}
                      keywordClassName=" 
                      text-secondary-1 transition-all duration-500 ease-in-out"
                   />
