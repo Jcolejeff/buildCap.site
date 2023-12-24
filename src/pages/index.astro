@@ -203,15 +203,15 @@ const images = [
          >
             <div class="relative flex w-full flex-col justify-center gap-[2.5rem] md:gap-[2.75rem]">
                <div class="flex flex-col items-center justify-center gap-6 2xl:gap-8">
-                  <h1
-                     class="text-center text-[2.3rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:max-w-[60rem] md:text-[2.6rem] md:leading-[5rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem]"
+                  <h4
+                     class="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[3rem]"
                   >
                      <TextFormat
                         text={`How it works for Suppliers `}
                         keyword={"business"}
                         keywordClassName="text-secondary  transition-all duration-500 ease-in-out"
                      />
-                  </h1>
+                  </h4>
                </div>
             </div>
             <section
@@ -222,11 +222,11 @@ const images = [
                      return (
                         <article class=" flex items-center gap-4 rounded-lg  border-[3px] bg-slate-900 px-5 py-8 md:px-12 md:py-20">
                            <div class="flex flex-col gap-4  px-2">
-                              <h3 class="text-2xl font-semibold text-secondary-1">
+                              <h3 class=" font-semibold text-secondary-1 md:text-base lg:text-lg xxl:text-xl">
                                  <span>{index + 1 < 10 ? `0${index + 1}` : index + 1}.</span>{" "}
                                  {item.heading}
                               </h3>
-                              <p class="text-[1.1rem] leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
+                              <p class="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
                                  {item.paragraph}
                               </p>
                            </div>
