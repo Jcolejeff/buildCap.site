@@ -47,19 +47,19 @@ const data = [
 ];
 const sectionsTwo = [
    {
-      heading: "Technical Support",
-      paragraph: "Our team is ready to help if you're having trouble with our product.",
+      heading: "Sign up to buildCap",
+      paragraph: "Get a buildCap profile instantly and connect your bank account.",
       img: "/images/contact/support.svg",
    },
    {
-      heading: "Suggest a Feature",
+      heading: "Upload an invoice",
       paragraph:
-         "Helps us shape the future of our buildCAP by sharing your thoughts on potential features",
+         "Upload an invoice and we pay the supplier on your behalf. You can pay us back later.",
       img: "/images/contact/support2.svg",
    },
    {
-      heading: "Integration partner network",
-      paragraph: "Are you having a problem integrating partner network? reach out to our experts",
+      heading: "No interest",
+      paragraph: "Simple fee, only on what you use.No hidden charges.",
       img: "/images/contact/support3.svg",
    },
 ];
@@ -72,7 +72,7 @@ const sections = [
    },
    {
       heading: "Flexible payment options",
-      paragraph: "We offer modular Pay Now and Pay Later options to our suppliers.",
+      paragraph: "We offer modular Pay Now and Pay Later options.",
       img: "/images/contact/support2.svg",
    },
    // {
@@ -160,6 +160,44 @@ const images = [
          </section>
       </section>
       <section class="w-full overflow-hidden bg-primary-1 text-white">
+         <!-- <section
+            class="container relative mt-12 w-full max-w-[1700px] space-y-[5rem] px-container-base pb-20 lg:px-container-lg xl:px-container-xl"
+         >
+            <div class="relative flex w-full flex-col justify-center gap-[2.5rem] md:gap-[2.75rem]">
+               <div class="flex flex-col items-center justify-center gap-6 2xl:gap-8">
+                  <h1
+                     class="text-center text-[2.3rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:max-w-[60rem] md:text-[2.6rem] md:leading-[5rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem]"
+                  >
+                     <TextFormat
+                        text={`How it works for businesses `}
+                        keyword={"business"}
+                        keywordClassName="text-secondary  transition-all duration-500 ease-in-out"
+                     />
+                  </h1>
+               </div>
+            </div>
+            <section
+               class="mx-auto grid w-full gap-[3rem] rounded-lg pb-20 md:grid-cols-[1fr_1fr_1fr] lg:max-w-[90%]"
+            >
+               {
+                  sectionsTwo.map((item, index) => {
+                     return (
+                        <article class=" flex items-center gap-4 rounded-lg  border-[3px] bg-slate-900 px-5 py-8 md:px-12 md:py-20">
+                           <div class="flex flex-col gap-4  px-2">
+                              <h3 class="text-2xl font-semibold text-secondary-1">
+                                 <span>{index + 1 < 10 ? `0${index + 1}` : index + 1}.</span>{" "}
+                                 {item.heading}
+                              </h3>
+                              <p class="text-[1.1rem] leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
+                                 {item.paragraph}
+                              </p>
+                           </div>
+                        </article>
+                     );
+                  })
+               }
+            </section>
+         </section> -->
          <section
             class="container relative mt-12 w-full max-w-[1700px] space-y-[5rem] px-container-base pb-20 lg:px-container-lg xl:px-container-xl"
          >

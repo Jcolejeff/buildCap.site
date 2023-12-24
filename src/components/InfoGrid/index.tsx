@@ -29,7 +29,7 @@ const InfoGrid = () => {
    return (
       <div>
          <p className="mb-12 max-w-[37.75rem] text-[1.4rem] font-semibold tracking-[0.00563rem] md:text-[1.6rem] md:leading-[1.7rem]">
-            How it works
+            How it works for Subcontractors
          </p>
 
          <section className="grid gap-[3rem] rounded-lg md:mt-12 md:gap-[1rem] lg:grid-cols-[1fr_1fr]">
