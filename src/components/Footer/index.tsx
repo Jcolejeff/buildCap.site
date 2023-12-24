@@ -12,8 +12,11 @@ const Footer = ({}: IFooter) => {
             <div className="  flex  flex-col  gap-8  ">
                <div className="">
                   <a href="/" className="flex items-center gap-4">
-                     <img src={url("/images/logoBlue.svg")} alt="" className="w-12" />
-                     <p className="text-2xl font-bold text-primary-1">buildCAP</p>
+                     <img
+                        src={url("/images/n-logo.png")}
+                        alt=""
+                        className="w-20 object-contain lg:w-32"
+                     />
                   </a>
                </div>
             </div>

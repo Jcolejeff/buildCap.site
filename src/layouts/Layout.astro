@@ -35,7 +35,7 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "buildCAP - ";
          name="description"
          content="Empowering you to do the best work of your life with efficiency, speed and accuracy.."
       />
-      <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+      <link rel="icon" type="image/svg+xml" href="/images/fav.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -66,7 +66,7 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "buildCAP - ";
       <meta property="og:url" content="buildCAP.com" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="buildCAP" />
-      <!-- <meta property="og:image" content="/images/og-img.png" /> -->
+      <meta property="og:image" content="/images/og.png" />
 
       <title>
          {PAGE_TITLE || "buildCAP"}
@@ -93,7 +93,7 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "buildCAP - ";
       <div class="relative h-full w-full overflow-x-hidden scroll-smooth">
          {
             (
-               <section class={`fixed left-0 top-0 z-50 w-full bg-primary-2 shadow-sm`}>
+               <section class={`fixed left-0 top-0 z-[200] w-full bg-primary-2 shadow-sm`}>
                   <Nav darkNavBg={!darkNavBg} />
                </section>
             )
