@@ -7,67 +7,25 @@ import { url } from "lib/utils";
 import HowCanWeHelpSection from "components/ContactSales";
 const sections = [
    {
-      heading: "Technical Support",
-      paragraph: "Our team is ready to help if you're having trouble with our product.",
+      heading: "Get Paid upfront",
+      paragraph: "We offer easy and fast payment options to our suppliers.",
       img: "/images/contact/support.svg",
    },
    {
-      heading: "Suggest a Feature",
-      paragraph:
-         "Helps us shape the future of our buildCAP by sharing your thoughts on potential features",
+      heading: "Flexible payment options",
+      paragraph: "We offer modular Pay Now and Pay Later options to our suppliers.",
       img: "/images/contact/support2.svg",
    },
-   {
-      heading: "Integration partner network",
-      paragraph: "Are you having a problem integrating partner network? reach out to our experts",
-      img: "/images/contact/support3.svg",
-   },
+   // {
+   //    heading: "Integration partner network",
+   //    paragraph: "Are you having a problem integrating partner network? reach out to our experts",
+   //    img: "/images/contact/support3.svg",
+   // },
 ];
 ---
 
 <Layout title="Contact Us">
-   <main class="flex w-full flex-col bg-primary-2">
-      <section class="mt-20 w-full overflow-hidden bg-primary-1 text-white">
-         <section
-            class="container relative w-full max-w-[1700px] px-container-base py-[3rem] pb-20 md:py-[5rem] md:pb-[7.25rem] md:pt-[6rem] lg:px-container-lg xl:px-container-xl"
-         >
-            <div class="relative flex w-full flex-col justify-center gap-[2.5rem] md:gap-[2.75rem]">
-               <div class="flex flex-col items-center justify-center gap-6 2xl:gap-8">
-                  <div class="flex items-center gap-4 rounded-full bg-secondary-1/25 px-6 py-3">
-                     <p class="text-sm font-[600] md:text-lg">CONTACT US</p>
-                  </div>
-                  <h1
-                     class="text-center text-[2.3rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:max-w-[60rem] md:text-[4.4rem] md:leading-[5rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem]"
-                  >
-                     <TextFormat
-                        text={`Hi    our amiable team are ready to help `}
-                        keyword={"business"}
-                        keywordClassName="text-secondary  transition-all duration-500 ease-in-out"
-                     />
-                  </h1>
-               </div>
-            </div>
-         </section>
-      </section>
-      <section
-         class="container relative mt-12 grid w-full max-w-[1700px] gap-[3rem] rounded-lg px-container-base py-[3rem] pb-20 md:grid-cols-[1fr_1fr_1fr] md:py-[5rem] md:pb-[7.25rem] md:pt-[6rem] lg:px-container-lg xl:px-container-xl"
-      >
-         {
-            sections.map((item) => {
-               return (
-                  <article class=" flex items-center gap-4 rounded-lg  border-[3px] bg-slate-200/50 px-5 py-8 md:py-20">
-                     <img src={url(item.img)} alt="" />
-                     <div class="flex flex-col gap-4  px-2">
-                        <h3 class="text-2xl font-semibold">{item.heading}</h3>
-                        <p class="text-[1.1rem] leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
-                           {item.paragraph}
-                        </p>
-                     </div>
-                  </article>
-               );
-            })
-         }
-      </section>
+   <main class="mt-20 flex w-full flex-col bg-primary-2">
       <section class="">
          <section class="py-16 md:pb-[8rem] md:pt-[5rem]">
             <HowCanWeHelpSection client:load />
