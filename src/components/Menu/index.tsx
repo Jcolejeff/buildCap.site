@@ -38,12 +38,15 @@ const Menu = () => {
             <div
                className={`fixed z-[100] h-full ${
                   menuOpen ? `translate-x-0` : `!-translate-x-full`
-               } bottom-0 left-0 right-0  top-0 z-10 flex w-[100vw] flex-col overflow-auto bg-white px-container-base transition-transform duration-300 ease-in-out`}
+               } bottom-0 left-0 right-0  top-0 z-[200] flex w-[100vw] flex-col overflow-auto bg-white px-container-base transition-transform duration-300 ease-in-out`}
             >
                <div className="flex w-full items-center justify-between border-b border-b-gray-300 pb-[0.75rem] pt-[1.5rem] md:pb-[1rem] lg:border-b-secondary-1">
                   <a href="/" className="flex items-center gap-4">
-                     <img src={url("/images/logoBlue.svg")} alt="" className="w-8 md:w-12" />
-                     <p className="text-sm font-bold text-primary-1 md:text-2xl">buildCAP</p>
+                     <img
+                        src={url("/images/n-logo.png")}
+                        alt=""
+                        className="w-24 object-contain lg:w-32"
+                     />
                   </a>
 
                   <svg

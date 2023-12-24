@@ -9,7 +9,7 @@ const InfoGrid = () => {
    const data = [
       {
          image: "/images/receipts/iconOne.svg",
-         heading: "Connect with Main Contractors on buildCAP",
+         heading: "Connect with main contractors on buildCAP",
          paragraph:
             "Start by linking with your main contractor on buildCAP and get your project rolling!.",
       },
@@ -21,9 +21,14 @@ const InfoGrid = () => {
       },
       {
          image: "/images/receipts/icon.svg",
-         heading: "Get Your Materials Financed",
+         heading: "Get your materials financed",
          paragraph:
             "Receive direct financing for your materials, ensuring no delays in your project.",
+      },
+      {
+         image: "/images/receipts/icon.svg",
+         heading: "Simple Fee, no interest",
+         paragraph: "Pay a simple fee on the financed amount, with no interest or hidden charges.",
       },
    ];
    return (

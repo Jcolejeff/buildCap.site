@@ -15,7 +15,7 @@ const Footer = ({}: IFooter) => {
                      <img
                         src={url("/images/n-logo.png")}
                         alt=""
-                        className="w-20 object-contain lg:w-32"
+                        className="w-24 object-contain lg:w-32"
                      />
                   </a>
                </div>
