@@ -29,6 +29,7 @@ import {
    SelectTrigger,
    SelectValue,
 } from "components/ui/select";
+import { Textarea } from "./ui/textarea";
 interface IProp {}
 const FormSchema = z.object({
    user_email: z
@@ -65,8 +66,7 @@ const GetStartedForm = () => {
       resolver: zodResolver(FormSchema),
       defaultValues: {
          user_email: "",
-         message:
-            "Hi,i just signed up to join the pool when you launch!, please notify me when you launch",
+         message: "",
       },
    });
 
@@ -151,7 +151,7 @@ const GetStartedForm = () => {
                            <div className="relative">
                               <FormControl>
                                  <Input
-                                    className="py-7 text-lg transition-all duration-300 ease-in-out  placeholder:text-lg  placeholder:text-gray-300 focus-within:placeholder:text-secondary-2 focus:bg-[#DBF1FF] "
+                                    className="py-7 text-lg transition-all duration-300 ease-in-out  placeholder:text-lg  placeholder:text-gray-300 focus-within:placeholder:text-secondary-2 focus:bg-[#DBF1FF]  "
                                     placeholder="Name"
                                     {...field}
                                  />
@@ -221,10 +221,11 @@ const GetStartedForm = () => {
                      render={({ field }) => (
                         <FormItem>
                            <FormControl>
-                              <Input
-                                 className=" hidden bg-white text-lg transition-all duration-200    ease-in-out placeholder:text-lg placeholder:text-gray-400"
+                              <Textarea
+                                 rows={2}
+                                 className="resize-none bg-white px-[0.5rem] text-xl text-secondary-2 placeholder:text-lg placeholder:text-gray-300   placeholder:text-secondary-2/[0.38] focus-within:border-0    "
                                  {...field}
-                                 placeholder="Enter your message "
+                                 placeholder="Write here..."
                               />
                            </FormControl>
 
@@ -264,7 +265,7 @@ const GetStartedForm = () => {
          <div className=" rounded-md bg-cover bg-center filter transition-all  duration-300  ease-in-out hover:cursor-pointer   md:w-1/2">
             <img
                src={url("/images/modal.jpg")}
-               className="w-full rounded-md  object-cover md:h-[350px]"
+               className="h-full w-full  rounded-md object-cover "
                alt=""
             />
          </div>
