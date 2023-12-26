@@ -68,12 +68,12 @@ const sections = [
    {
       heading: "Get Paid upfront",
       paragraph: "We offer easy and fast payment options to our suppliers.",
-      img: "/images/contact/support.svg",
+      img: "/images/receipts/iconOne.svg",
    },
    {
       heading: "Flexible payment options",
       paragraph: "We enable you offer credit terms and flexible payment options to your customers.",
-      img: "/images/contact/support2.svg",
+      img: "/images/receipts/icon.svg",
    },
    // {
    //    heading: "Integration partner network",
@@ -212,17 +212,20 @@ const images = [
             {
                sections.map((item, index) => {
                   return (
-                     <article class=" flex items-center gap-4 rounded-lg  border-[5px] border-secondary-1 bg-slate-900 px-5 py-8 md:px-12 md:py-20">
-                        <div class="flex flex-col gap-4 rounded-lg  px-2">
-                           <h3 class=" font-semibold text-secondary-1 md:text-base lg:text-lg xxl:text-xl">
-                              <span>{index + 1 < 10 ? `0${index + 1}` : index + 1}.</span>{" "}
-                              {item.heading}
-                           </h3>
-                           <p class="text-[0.8rem] leading-[130%] tracking-[0.02rem] text-white md:leading-[2rem] md:tracking-[0.0225rem] lg:text-base">
-                              {item.paragraph}
-                           </p>
-                        </div>
-                     </article>
+                     <>
+                        <article class="flex  items-center gap-4 rounded-2xl border-[1px]  px-5 py-8  shadow-md xxl:gap-12 xxl:py-12">
+                           <div class="flex flex-col gap-2 px-2  xxl:gap-4">
+                              <img src={url(item.img)} alt="" class="w-12 xl:w-12" />
+                              <h3 class="font-semibold md:text-base xl:text-lg">
+                                 <span>{index + 1 < 10 ? `0${index + 1}` : index + 1}.</span>{" "}
+                                 {item.heading}
+                              </h3>
+                              <p class="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem] xl:text-base">
+                                 {item.paragraph}
+                              </p>
+                           </div>
+                        </article>
+                     </>
                   );
                })
             }
