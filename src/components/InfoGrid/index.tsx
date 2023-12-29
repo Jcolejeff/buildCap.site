@@ -27,8 +27,8 @@ const InfoGrid = () => {
       },
       {
          image: "/images/receipts/icon.svg",
-         heading: "Simple Fee, no interest",
-         paragraph: "Pay a simple fee on the financed amount, with no interest or hidden charges.",
+         heading: "Simple Fee",
+         paragraph: "Pay a simple fee on the financed amount, with no hidden charges.",
       },
    ];
    return (
