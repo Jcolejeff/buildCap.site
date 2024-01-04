@@ -15,7 +15,7 @@ const LandingPageHero = () => {
          <div className="relative flex w-full flex-col justify-center gap-[0.5rem] md:grid  md:grid-cols-[1fr_1fr]  md:gap-[2.75rem] ">
             <div className=" flex flex-col items-center justify-center  gap-6 2xl:gap-8">
                <div>
-                  <h1 className="max-w-[80rem] text-center text-[2rem]    font-[700] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[4rem] xxl:leading-[4rem]">
+                  <h1 className="max-w-[80rem] text-center text-[2rem]    font-[700] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3.4rem] xxl:text-[5rem] xxl:leading-[5rem]">
                      <TextFormat
                         text={`Financial solutions built for`}
                         keyword={"The buildCAP"}
@@ -26,8 +26,8 @@ const LandingPageHero = () => {
                </div>
 
                <Fade bottom>
-                  <h2 className="max-w-[38.875rem] text-center text-[1.18rem] font-[500] leading-[2.2rem] text-secondary-2 md:leading-[2.01rem] lg:text-[1rem] xxl:max-w-[45.875rem] xxl:text-[1.5rem]">
-                     Revolutionizing Construction Financing in Africa.
+                  <h2 className="max-w-[38.875rem] text-center text-[1.18rem] font-[500] leading-[2.2rem] text-secondary-2 md:leading-[2.01rem] lg:text-[1.2rem] xxl:max-w-[45.875rem] xxl:text-[1.5rem]">
+                     Seamlessly access capital for your Construction projects.
                   </h2>
                </Fade>
 
